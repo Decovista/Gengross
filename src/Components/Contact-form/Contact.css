@@ -1,0 +1,74 @@
+.Contact {
+    width: 80%;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+.Contact h2 {
+    font-size: 34px;
+    color: #0b474b;
+    text-decoration: underline;
+    margin: 15px 0;
+}
+.card-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 36px 0;
+}
+.cards li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.cards {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.Contact h3 {
+    font-size: 23px;
+    color: #81037b;
+    font-family: "Outfit", sans-serif;
+    margin: 15px 0;
+    font-weight: 800;
+    text-align: center;
+}
+.Contact p {
+    margin: 6px 0 0;
+    color: #003045;
+    font-size: 18px;
+    text-align: center;
+}
+.cards button {
+    padding: 12px 16px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 800;
+    background: #81037b;
+}
+@media(min-width:1200px){
+    .Contact {
+        width: 70%;
+    }
+}
+@media(max-width:768px){
+    .card-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cards {
+        width: 100%;
+    }
+    .cards:first-child{
+     width: fit-content;
+    }
+}
+

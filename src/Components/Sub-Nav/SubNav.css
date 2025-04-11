@@ -1,0 +1,24 @@
+.sideBar {
+  position: absolute;
+  top: 0;
+  background: #fff;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 96px 0 0;
+  z-index: 99999999999;
+}
+.sideBar i.fa-solid.fa-xmark {
+  position: absolute;
+  left: 19%;
+}
+ul.side {
+  list-style: none;
+}
+ul.side li {
+  margin: 18px 0 0;
+  font-size: 22px;
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+}

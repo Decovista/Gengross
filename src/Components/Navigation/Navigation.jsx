@@ -1,17 +1,17 @@
 import React, { useState } from 'react'
+import {Link} from 'react-router-dom'
 import resouce from '../resouce'
 import './Navigation.css'
 import SubNav from '../Sub-Nav/SubNav'
 
-function Navigation() {
-  const [active, setActive] = useState('home')
+function Navigation({setActive,active}) {
   const [toggleNav, setToggleNav] = useState(false)
   return (
     <div className="header">
   
     <div className='Navigation'>
       <div className="fist-row">
-        <button className='find'>FindProduct</button>
+       <Link to='/Product'><button className='find'>FindProduct</button></Link> 
       </div>
       <div className="second-row">
       <div className="logo">
@@ -29,9 +29,9 @@ function Navigation() {
       </div>
     </div>
     <ul className="bar">
-  <li onClick={() => setActive('home')} className={`${active === 'home' ?'active':''}`}>Home</li>
-  <li onClick={() => setActive('human')} className={`${active === 'human' ?'active':''}`}>Human Health</li>
-  <li onClick={() => setActive('manufacturing')} className={`${active === 'manufacturing' ?'active':''}`}>Manufacturing</li>
+  <Link to='*'><li onClick={() => setActive('home')} className={`${active === 'home' ?'active':''}`}>Home</li></Link>
+  <Link to="/Human"><li onClick={() => setActive('human')} className={`${active === 'human' ?'active':''}`}>Human Health</li></Link>
+  <Link to='/About'><li onClick={() => setActive('manufacturing')} className={`${active === 'manufacturing' ?'active':''}`}>Manufacturing</li></Link>
     </ul>
     {toggleNav && <SubNav setToggleNav={setToggleNav}/>}
     </div>

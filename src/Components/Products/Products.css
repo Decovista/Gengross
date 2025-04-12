@@ -1,0 +1,69 @@
+.Products .slick-next{
+    right: 0;
+    background: rgb(82, 82, 197);
+    border-radius: 50px;
+}
+.Products {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media (min-width: 440px) and (max-width: 768px) {
+    .Products .card {
+      margin: 33px auto !important;
+    }
+}
+@media(min-width:1400px){
+    .Products {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+.Products .slick-prev:hover,.Products.slick-next:hover{
+background-color: rgb(82, 82, 197);
+border-radius: 50px;
+}
+.Products .slick-prev {
+    left: 0;
+    background: rgb(82, 82, 197);
+    z-index: 9999;
+    border-radius: 50px;
+}
+.Products .card {
+    width: 250px !important;
+    margin: 33px auto;
+    height: 301px;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -11px -6px 14px 5px gray;
+    padding: 20px;
+    text-align: center;
+    gap: 10px;
+    border-radius: 12px;
+}
+.Products .slick-slide img {
+    width: 90%;
+    height: 60%;
+}
+.Products .card h3 {
+    font-size: 22px;
+    color: #0b474b;
+}
+.Products .card p {
+    font-size: 14px;
+    color: #051d1f;
+}
+.Products .card button {
+    max-width: 100px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: #0b474b;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}

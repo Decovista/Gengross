@@ -1,20 +1,18 @@
-import React from 'react'
-import Navigation from '../../Components/Navigation/Navigation'
-import HeroSection from '../../Components/Hero-Section/HeroSection'
-import About from '../../Components/About/About'
-import Contact from '../../Components/Contact-form/Contact'
-import Footer from '../../Components/Footer/Footer'
+import React from 'react';
+import HeroSection from '../../Components/Hero-Section/HeroSection';
+import About from '../../Components/About/About';
+import Contact from '../../Components/Contact-form/Contact';
+import ContactPopup from '../../Components/Contact-popup/ContactPopup';
 
-function Home() {
+function Home({ setShowContact, showContact }) {
   return (
     <div>
-      <Navigation />
       <HeroSection />
       <About />
-      <Contact />
-      <Footer />
+      <Contact setShowContact={setShowContact} />
+      {showContact && <ContactPopup setShowContact={setShowContact} />}
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;

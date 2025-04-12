@@ -1,7 +1,8 @@
 import React from 'react'
+import ContactPopup from '../Contact-popup/ContactPopup'
 import './Contact.css'
 
-function Contact() {
+function Contact({setShowContact}) {
   return (
     <div className='Contact'>
         <h2>Connect with US</h2>
@@ -16,7 +17,7 @@ function Contact() {
       <div className="cards">
         <h3>Get-In Touch</h3>
         <p>Kindly click on the button and fill the contact form to get our Services</p>
-        <button>Subscribe Us</button>
+        <button onClick={() => setShowContact(true) }>Subscribe Us</button>
       </div>
         </div>
     </div>

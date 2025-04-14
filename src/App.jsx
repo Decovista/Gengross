@@ -7,6 +7,7 @@ import Footer from './Components/Footer/Footer';
 import HumanHealth from './Pages/HumanHealth/HumanHealth';
 import About from './Components/About/About';
 import Products from './Components/Products/Products';
+import ProductCategories from './Components/ProductCategories/ProductCategories';
 
 function App() {
   const [active, setActive] = useState('home');
@@ -24,7 +25,7 @@ function App() {
         <Route path="/About" element={<About active={active} setActive={setActive} />} />
         <Route
           path="/Product"
-          element={<Products setShowContact={setShowContact} showContact={showContact} />}
+          element={<ProductCategories />}
           />
       </Routes>
       <Footer />

@@ -64,7 +64,6 @@ function Products({ setShowContact, showContact }) {
 
   return (
     <div className='Products' style={{ height: 'fit-content', padding: '20px' }}>
-      <h2 style={{ textAlign: 'center', fontSize: '32px', color: '#0b474b', margin: '20px 0' }}>Products</h2>
       <div className="slider-container">
         <Slider {...settings}>
           {cardData.map((item, index) => (

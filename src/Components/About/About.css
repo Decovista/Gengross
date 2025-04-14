@@ -69,3 +69,8 @@
         width: 100%;
     }
 }
+@media(max-width:475px){
+    .col1 p {
+        font-size: 14px;
+    }
+}

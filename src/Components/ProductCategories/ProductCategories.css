@@ -1,0 +1,38 @@
+.Product-categories {
+    height: auto;
+}
+.Category-sidebar {
+    height: auto;
+    width: 19%;
+    padding: 51px 30px;
+    box-shadow: 3px 1px 10px 2px #dfd7d7;
+    border-radius: 7px;
+    transform: scale(1.02);
+    margin: 38px 0;
+}
+.Category-sidebar ul{
+    list-style: none;
+}
+.Category-sidebar ul li {
+    margin: 15px 0;
+    font-weight: 600;
+    color: #163d60;
+}
+.Category-sidebar ul h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Category-sidebar ul li {
+    margin: 15px 0;
+    font-weight: 600;
+    color: #163d60;
+    box-shadow: 2px 3px 7px 3px;
+    padding: 20px;
+    border-radius: 4px;
+    user-select: none;
+}
+.Category-sidebar ul .clicked{
+    transform: scale(1.08);
+    box-shadow: 2px 3px 7px 3px rgb(221, 81, 191);
+}

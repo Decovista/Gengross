@@ -1,7 +1,6 @@
 import slide1 from '../../public/slide1.webp'
 import slide2 from '../../public/slide2.webp'
 import slide3 from '../../public/slide3.jpeg'
-import logo from '../../public/logo.png'
 import About1 from '../../public/About1.webp'
 import labs1 from '../../public/labs1.jpeg'
 import labs2 from '../../public/labs2.jpeg'
@@ -15,6 +14,11 @@ import Product1 from '../../public/Product1.webp'
 import Product2 from '../../public/Product2.jpeg'
 import Product3 from '../../public/Product3.webp'
 import video1 from '../../public/back-vid.mp4'
+import logo from '../../public/logo.svg'
+import HumanHealth1 from '../../public/HumanHealth1.webp'
+import HumanHealth2 from '../../public/HumanHealth2.webp'
+import HumanHealth3 from '../../public/HumanHealth3.jpeg'
+import HumanHealth4 from '../../public/HumanHealth4.webp'
 
 const resouce = {
    slide1,
@@ -33,7 +37,11 @@ const resouce = {
    Product1,
    Product2,
    Product3,
-   video1
+   video1,
+   HumanHealth1,
+   HumanHealth2,
+   HumanHealth3,
+   HumanHealth4
 };
 
 export default resouce;

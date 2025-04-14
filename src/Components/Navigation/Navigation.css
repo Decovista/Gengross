@@ -1,5 +1,5 @@
 .logo img {
-    width: 82px;
+    width: 163px;
     position: absolute;
     top: 1%;
 }
@@ -88,7 +88,7 @@ ul.bar li {
   .mobile-menu{
     display: none;
   }
-@media(max-width:1200px){
+@media(max-width:1300px){
     .Navigation {
         width: 90%;
     }
@@ -103,7 +103,7 @@ ul.bar li {
         letter-spacing: 2px;
     }
     .logo img {
-        width: 72px;
+        width: 118px;
         position: relative;
     }
 }

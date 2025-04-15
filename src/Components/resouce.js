@@ -19,6 +19,7 @@ import HumanHealth1 from '../../public/Humanhealth1.webp'
 import HumanHealth2 from '../../public/Humanhealth2.webp'
 import HumanHealth3 from '../../public/Humanhealth3.jpeg'
 import HumanHealth4 from '../../public/Humanhealth4.webp'
+import Contactbg from '../../public/contact-bg.jpeg'
 
 const resouce = {
    slide1,
@@ -41,7 +42,8 @@ const resouce = {
    HumanHealth1,
    HumanHealth2,
    HumanHealth3,
-   HumanHealth4
+   HumanHealth4,
+   Contactbg
 };
 
 export default resouce;

@@ -16,9 +16,15 @@
 ul.side {
   list-style: none;
 }
-ul.side li {
+ul.side a  {
   margin: 18px 0 0;
   font-size: 22px;
-  border-bottom: 1px solid gray;
-  padding-bottom: 10px;
+  text-decoration: none;
+  color: #0b474b;
 }
+ul.side li{
+  margin:18px 0 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+

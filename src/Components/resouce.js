@@ -15,10 +15,10 @@ import Product2 from '../../public/Product2.jpeg'
 import Product3 from '../../public/Product3.webp'
 import video1 from '../../public/back-vid.mp4'
 import logo from '../../public/logo.svg'
-import HumanHealth1 from '../../public/HumanHealth1.webp'
-import HumanHealth2 from '../../public/HumanHealth2.webp'
-import HumanHealth3 from '../../public/HumanHealth3.jpeg'
-import HumanHealth4 from '../../public/HumanHealth4.webp'
+import HumanHealth1 from '../../public/Humanhealth1.webp'
+import HumanHealth2 from '../../public/Humanhealth2.webp'
+import HumanHealth3 from '../../public/Humanhealth3.jpeg'
+import HumanHealth4 from '../../public/Humanhealth4.webp'
 
 const resouce = {
    slide1,

@@ -2,8 +2,7 @@
     width: 100%;
     background:linear-gradient(115deg, #0b474b, #e1f5f5);
     padding: 6px 0;
-    position: fixed;
-    bottom: 0;
+    position: relative;
 }
 .Footer-wrapper::after {
     content: '';

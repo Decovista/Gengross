@@ -3,8 +3,8 @@
 }
 .Category-sidebar {
     height: auto;
-    width: 19%;
-    padding: 51px 30px;
+    width: 14%;
+    padding: 26px 21px;
     box-shadow: 3px 1px 10px 2px #dfd7d7;
     border-radius: 7px;
     transform: scale(1.02);
@@ -13,11 +13,6 @@
 .Category-sidebar ul{
     list-style: none;
 }
-.Category-sidebar ul li {
-    margin: 15px 0;
-    font-weight: 600;
-    color: #163d60;
-}
 .Category-sidebar ul h3 {
     display: flex;
     align-items: center;
@@ -25,14 +20,31 @@
 }
 .Category-sidebar ul li {
     margin: 15px 0;
-    font-weight: 600;
+    font-weight: 500;
     color: #163d60;
-    box-shadow: 2px 3px 7px 3px;
-    padding: 20px;
+    box-shadow: 1px 12px 0px 0px;
+    padding: 11px;
     border-radius: 4px;
     user-select: none;
+    font-size: 12px;
 }
 .Category-sidebar ul .clicked{
     transform: scale(1.08);
-    box-shadow: 2px 3px 7px 3px rgb(221, 81, 191);
+    box-shadow: 2px 3px 7px 3px rgb(229 174 217);
+}
+@media(max-width:768px){
+    .Category-sidebar {
+        height: auto;
+        width: 100%;
+        padding: 8px 11px;
+        box-shadow: 3px 1px 10px 2px #dfd7d7;
+        border-radius: 7px;
+        transform: scale(1.02);
+        margin: 38px 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    .Category-sidebar ul h3 {
+        gap: 14px;
+    }
 }

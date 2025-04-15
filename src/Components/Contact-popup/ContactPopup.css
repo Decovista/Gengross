@@ -117,10 +117,13 @@ textarea {
   }
   @media (max-width: 475px) {
     .ContactPopup {
-        max-width: 294px;
+        position: unset;
+        max-width: 290px;
         width: 100%;
         left: 1%;
         padding: 15px 15px;
+        margin: 0 auto;
+        margin-bottom: 52px;
     }
     .ContactPopup i.fa-solid.fa-xmark {
         left: 29px;

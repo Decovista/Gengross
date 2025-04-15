@@ -39,15 +39,14 @@
     flex-shrink: 0;
   }
   
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
-  
+ 
+ @media(max-width:475px){
+  .slider-warapper {
+    width: 87%;
+    margin: 0 auto;
+    height: 50vh;
+}
+ } 
 @media(min-width:1300px){
     .slider-warapper {
         width: 70%;

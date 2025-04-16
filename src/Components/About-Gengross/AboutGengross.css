@@ -1,0 +1,41 @@
+.founder-row1 img {
+    width: 176px;
+    height: 181px;
+    border-radius: 103px;
+    margin: 0 auto;
+}
+.founder-row1 {
+    width: 100%;
+    display: flex;
+    margin: 20px 0;
+}
+.founder-row3 p {
+    width: 78%;
+    margin: 26px auto 50px;
+    text-align: center;
+    line-height: 1.5;
+}
+.service-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 20px auto;
+    justify-content: space-around;
+}
+.swrap1 {
+    max-width: 400px;
+    box-shadow: 1px 1px 5px 0px #aba7a7;
+    margin: 20px 0;
+}
+.swrap1 p {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding: 20px 40px 44px;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 26px;
+
+}

@@ -1,26 +1,58 @@
-import React from 'react';
+import React, { useState } from "react";
 import './ContactPopup.css';
-import resouce from '../resouce'; 
+import resouce from '../resouce';
 
 function ContactPopup({ setShowContact }) {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    address: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.id]: e.target.value, // using 'id' as the key
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const res = await fetch("http://localhost:5000/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await res.json();
+      alert(result.message);
+      setFormData({ name: "", email: "", address: "", message: "" }); // reset form
+    } catch (err) {
+      alert("Failed to send message.");
+      console.error(err);
+    }
+  };
+
   return (
     <div className="ContactPopup">
-       
-        <img src={resouce.Contactbg} className="video-bg" alt="contact" />
+      <img src={resouce.Contactbg} className="video-bg" alt="contact" />
       <i className="fa-solid fa-xmark close-icon" onClick={() => setShowContact(false)}></i>
-      <form action="#" onSubmit={(e) => e.preventDefault()}>
+
+      <form onSubmit={handleSubmit}>
         <h2>Contact Form</h2>
         <div className="row1">
-          <input id="name" type="text" placeholder="Name" required />
+          <input id="name" type="text" placeholder="Name" value={formData.name} onChange={handleChange} required />
         </div>
         <div className="row1">
-          <input id="email" type="email" placeholder="Email" required />
+          <input id="email" type="email" placeholder="Email" value={formData.email} onChange={handleChange} required />
         </div>
         <div className="row1">
-          <input id="address" type="text" placeholder="Address" required />
+          <input id="address" type="text" placeholder="Address" value={formData.address} onChange={handleChange} required />
         </div>
         <div className="row1">
-          <textarea id="message" placeholder="Note" rows="4" required></textarea>
+          <textarea id="message" placeholder="Note" rows="4" value={formData.message} onChange={handleChange} required></textarea>
         </div>
         <button type="submit">Submit</button>
       </form>

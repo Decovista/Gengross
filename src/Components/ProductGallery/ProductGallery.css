@@ -1,0 +1,25 @@
+.products {
+    display: flex;
+    width: 70%;
+    margin: 40px auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 23px;
+}
+.product-card {
+    height: 333px;
+    width: 286px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 0px 9px 3px gray;
+    border-radius: 9px;
+}
+.product-card img {
+    width: 100%;
+    height: 62%;
+    border-radius: 12px;
+}
+.product-card p {
+    margin: 11px 0;
+    font-size: 14px;
+}

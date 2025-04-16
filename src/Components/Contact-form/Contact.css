@@ -71,4 +71,13 @@
      width: fit-content;
     }
 }
+@media(max-width:500px){
+    .Contact h2 {
+        font-size: 25px;
+        margin: 0;
+    }
+    .Contact p {
+        font-size: 14px;
+    }
+}
 

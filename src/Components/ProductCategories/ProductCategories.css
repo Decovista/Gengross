@@ -1,5 +1,5 @@
 .Product-categories {
-    height: 100vh;
+    height: auto;
 }
 .Category-sidebar {
     height: auto;
@@ -13,8 +13,9 @@
     justify-content: space-around;
     margin: 26px auto 96px;
 }
-.Category-sidebar ul{
+.Category-sidebar ul {
     list-style: none;
+    width: 41%;
 }
 .Category-sidebar ul h3 {
     display: flex;
@@ -25,30 +26,38 @@
     margin: 15px 0;
     font-weight: 500;
     color: #163d60;
-    box-shadow: 1px 5px 0px 0px;
+    box-shadow: 1px 0px 6px 1px;
     padding: 11px;
     border-radius: 4px;
     user-select: none;
     font-size: 12px;
-    width: 196px;
+    width: 100%;
 }
+
 .Category-sidebar ul .clicked{
     transform: scale(1.08);
     box-shadow: 2px 3px 7px 3px rgb(229 174 217);
 }
 @media(max-width:768px){
-    .Category-sidebar {
-        height: auto;
-        width: 100%;
-        padding: 8px 11px;
-        box-shadow: 3px 1px 10px 2px #dfd7d7;
-        border-radius: 7px;
-        transform: scale(1.02);
-        margin: 38px 0;
-        display: flex;
-        justify-content: space-around;
-    }
+        .Category-sidebar {
+            height: auto;
+            width: 79%;
+            padding: 8px 11px;
+            box-shadow: 3px 1px 10px 2px #dfd7d7;
+            border-radius: 7px;
+            transform: scale(1.02);
+            margin: 38px 0;
+            display: flex
+    ;
+            justify-content: space-around;
+            margin: 22px auto;
+        }
     .Category-sidebar ul h3 {
         gap: 14px;
+    }
+}
+@media(max-width:425px){
+    .Category-sidebar ul li {
+        width: 89%;
     }
 }

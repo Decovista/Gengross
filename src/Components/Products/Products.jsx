@@ -71,11 +71,10 @@ function Products({ setShowContact, showContact }) {
               <img src={item.profile} alt={`product-${index}`} />
               <h3>{item.name}</h3>
               <p>{item.desc}</p>
-              <button onClick={() => setShowContact(true)}>Get</button>
+              <button className='globle-btn' onClick={() => setShowContact(true)}>Get</button>
             </div>
           ))}
         </Slider>
-        {showContact && <ContactPopup setShowContact={setShowContact} />}
       </div>
     </div>
   );

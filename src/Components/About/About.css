@@ -35,6 +35,13 @@
 }
 .col1 p {
     font-size: 22px;
+    display: -webkit-box;
+  -webkit-line-clamp: 6;     
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.col1 p:hover {
+    display: block;
 }
 .col2 {
     width: 50%;

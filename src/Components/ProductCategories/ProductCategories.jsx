@@ -1,9 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './ProductCategories.css';
 
-function ProductCategories() {
+function ProductCategories({ onCategoryChange,selectedCategory}) {
   const [openSection, setOpenSection] = useState('');
   const menuRef = useRef(null);
+  const [correntCategory, setCurrentCategory] = useState('')
 
   useEffect(() => {
     function handleClickOutside(event) {
@@ -23,50 +24,28 @@ function ProductCategories() {
   };
 
   return (
-    <div className='Product-categories' ref={menuRef}>
+    <div className="Product-categories" ref={menuRef}>
       <div className="Category-sidebar">
-
-        <ul className='categories'>
+        <ul className="categories">
           <li
             onClick={() => handleToggle('Products')}
             className={`section-header ${openSection === 'Products' ? 'clicked' : ''}`}
           >
             <h3>
-              Products
+              {selectedCategory === correntCategory ? correntCategory : 'All' }
               <i className={openSection === 'Products' ? 'fa-solid fa-caret-down' : 'fa-solid fa-caret-up'}></i>
             </h3>
           </li>
           {openSection === 'Products' && (
             <>
-              <li>BESTSELLERS</li>
-              <li>NEW LAUNCH</li>
-              <li>TOP BRANDS</li>
-              <li>HIGH IN DEMAND</li>
-              <li>RECENT</li>
+              <li onClick={() => {onCategoryChange('BestSellers'), setOpenSection(''), setCurrentCategory('BestSellers')} }>BESTSELLERS</li>
+              <li onClick={() => {onCategoryChange('Bundle'), setOpenSection(''),setCurrentCategory('Bundle')}}>BUNDLES</li>
+              <li onClick={() => {onCategoryChange('NewLaunch'), setOpenSection(''), setCurrentCategory('NewLaunch')}}>NEW LAUNCH</li>
+              <li onClick={() => {onCategoryChange('TopBrands'), setOpenSection(''), setCurrentCategory('TopBrands')}}>TOP BRANDS</li>
+              <li onClick={() => {onCategoryChange('HighDemand'), setOpenSection(''), setCurrentCategory('HighDemand')}}>HIGH IN DEMAND</li>
             </>
           )}
         </ul>
-
-        <ul className='others'>
-          <li
-            onClick={() => handleToggle('Overview')}
-            className={`section-header ${openSection === 'Overview' ? 'clicked' : ''}`}
-          >
-            <h3>
-              Overview
-              <i className={openSection === 'Overview' ? 'fa-solid fa-caret-down' : 'fa-solid fa-caret-up'}></i>
-            </h3>
-          </li>
-          {openSection === 'Overview' && (
-            <>
-              <li>FAQ</li>
-              <li>Review</li>
-              <li>Benefits</li>
-              <li>Overview</li>
-            </>
-          )}
-        </ul>
-
       </div>
     </div>
   );

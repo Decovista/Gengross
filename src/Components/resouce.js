@@ -14,7 +14,7 @@ import Product1 from '../../public/Product1.webp'
 import Product2 from '../../public/Product2.jpeg'
 import Product3 from '../../public/Product3.webp'
 import video1 from '../../public/back-vid.mp4'
-import logo from '../../public/logo.svg'
+import logo from '../../public/brand-logo.png'
 import HumanHealth1 from '../../public/Humanhealth1.webp'
 import HumanHealth2 from '../../public/Humanhealth2.webp'
 import HumanHealth3 from '../../public/Humanhealth3.jpeg'
@@ -23,6 +23,8 @@ import Contactbg from '../../public/contact-bg.jpeg'
 import NewBanner1 from '../../public/new-banner1.png'
 import NewBanner3 from '../../public/new-banner3.png'
 import Founder from '../../public/founder.jpeg'
+import onotherBaner from '../../public/another-new-b.png'
+
 
 const resouce = {
    slide1,
@@ -49,7 +51,8 @@ const resouce = {
    Contactbg,
    NewBanner1,
    NewBanner3,
-   Founder
+   Founder,
+   onotherBaner
 };
 
 export default resouce;

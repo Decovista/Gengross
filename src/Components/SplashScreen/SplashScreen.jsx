@@ -21,12 +21,7 @@ function SplashScreen({ onFinish }) {
 
   return (
     <div className="splash-container">
-      <div className="splash-content">
-        <h1 className="splash-title">Gengross</h1>
-        <div className="progress-bar">
-          <div className="progress-fill" style={{ width: `${progress}%` }}></div>
-        </div>
-      </div>
+      <div class="spinner"></div>
     </div>
   );
 }

@@ -25,7 +25,7 @@ function HeroSection() {
           <img src={resouce.NewBanner1} />
         </div>
         <div>
-          <img src={resouce.slide2} />
+          <img src={resouce.onotherBaner} />
         </div>
         <div>
           <img src={resouce.NewBanner3} />

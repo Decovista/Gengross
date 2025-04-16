@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import  './Footer.css'
 
 function Footer() {
@@ -9,8 +10,8 @@ function Footer() {
         <ul className="footer-item">
             <h2>Company</h2>
             <hr />
-            <li>About US</li>
-            <li>Privacy policy</li>
+            <Link to='/About'><li>About US</li></Link>
+            <Link to='/'><li>Privacy policy</li></Link>
             <li>Our Services</li>
             <li>Affliate Programs</li>
         </ul>
@@ -18,7 +19,7 @@ function Footer() {
             <h2>Get Help</h2>
             <hr  />
             <li>Shiping</li>
-            <li>FAQ</li>
+            <Link to='/FAQ'><li>FAQ</li></Link>
             <li>Returns</li>
             <li>Order Status</li>
         </ul>
@@ -32,9 +33,11 @@ function Footer() {
         <ul className="footer-item">
             <h2>Follow Us</h2>
             <hr  />
-            <li className='socail-me'><i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-x-twitter"></i>
-            <i class="fa-brands fa-linkedin-in"></i></li>
+            <li className='socail-me'>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/?lang=en"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </li>
         </ul>
       </div>
       <div className="Footer-row-2">

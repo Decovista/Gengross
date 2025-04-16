@@ -61,7 +61,8 @@ ul.footer-item li {
         justify-content: space-between;
         margin-top: 25px;
 }
-.socail-me i {
+.socail-me a i{
+    color: #ffffff;
     font-size: 23px;
     margin: 10px 0 0;
     cursor: pointer;

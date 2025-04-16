@@ -54,7 +54,7 @@
     height: 50vh;
 }
  } 
-@media(min-width:1300px){
+@media(min-width:1450px){
     .slider-warapper {
         width: 70%;
     }

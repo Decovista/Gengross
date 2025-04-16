@@ -54,6 +54,9 @@ border-radius: 50px;
 .Products .card p {
     font-size: 14px;
     color: #051d1f;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
 }
  .globle-btn {
     max-width: 100px;

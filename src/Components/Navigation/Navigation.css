@@ -1,6 +1,8 @@
 .logo img {
-    width: 163px;
+    height: 97px;
     position: absolute;
+    width: 118px;
+    top: 0;
     top: 1%;
 }
 .Navigation {
@@ -33,6 +35,9 @@
 .fist-row {
     display: flex;
     justify-content: flex-end;
+}
+.header {
+    background: #fdfcf9;
 }
 button.find {
     padding: 10px 15px 10px 13px;
@@ -91,23 +96,11 @@ ul.bar li {
 @media(max-width:1300px){
     .Navigation {
         width: 90%;
+        padding: 10px 0;
     }
-}
+}   
+ 
 @media(max-width:768px){
-    ul.bar li {
-        margin: 10px 0px 0 29px;
-        font-size: 18px;   
-    }
-    button.find {
-        padding: 8px 10px 8px 8px;
-        letter-spacing: 2px;
-    }
-    .logo img {
-        width: 118px;
-        position: relative;
-    }
-}
-@media(max-width:500px){
     ul.bar li {
      display: none; 
     }
@@ -120,5 +113,22 @@ ul.bar li {
         font-size: 28px;
         cursor: pointer;
     }
+    .logo img {
+        position: unset;
+    }
+    ul.bar li {
+        margin: 10px 0px 0 29px;
+        font-size: 18px;   
+    }
+    button.find {
+        padding: 8px 10px 8px 8px;
+        letter-spacing: 2px;
+    }
+    .logo img {
+        width: 118px;
+        top: 0;
+        height: 107px;
+    }
 }
+
 

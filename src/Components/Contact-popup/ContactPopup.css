@@ -8,6 +8,7 @@
     box-shadow: -1px 0px 11px 1px gray;
     transform: scale(1.01);
     animation: slidein 0.5s ease forwards;
+    left: 18%;
 }
 @keyframes slidein {
     0% {
@@ -127,7 +128,6 @@ textarea {
   }
   @media (max-width: 475px) {
     .ContactPopup {
-        position: fixed;
         max-width: 290px;
         width: 100%;
         padding: 15px 15px;
@@ -142,7 +142,6 @@ textarea {
 }
 @media (max-width: 320px) {
     .ContactPopup {
-        position: fixed;
         left: 2%;
     }
 }

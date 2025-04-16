@@ -22,4 +22,9 @@
 .product-card p {
     margin: 11px 0;
     font-size: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-align: center;
+    -webkit-box-orient: vertical;
 }

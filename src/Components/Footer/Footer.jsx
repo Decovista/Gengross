@@ -41,6 +41,7 @@ function Footer() {
         </ul>
       </div>
       <div className="Footer-row-2">
+      <hr style={{margin:'40px 0 0'}}  />
         <p>© Gengross - 2025</p>
       </div>
     </div>

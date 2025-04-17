@@ -51,8 +51,8 @@ ul.footer-item li {
 .Footer-row-2 p {
     text-align: center;
     font-size: 18px;
-    margin: 20px 0;
-    color: #0b474b;
+    color: #ffffff;
+    margin: 29px 0 10px;
 }
 .socail-me{
         margin-top: 10px;
@@ -78,9 +78,7 @@ ul.footer-item li {
      border:none;
      margin-top:4px;
 }
-.Footer-row-2 p {
-    margin: 52px 0 10px;
-}
+
 @media(max-width:768px){
     .Footer-row-1 {
         flex-direction: column;

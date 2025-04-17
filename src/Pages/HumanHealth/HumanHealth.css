@@ -1,8 +1,11 @@
+.Human-health {
+    margin-top: 190px;
+}
 .Human-health .wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    width: 80%;
+    width: 90%;
     margin: 55px auto;
     justify-content: space-around;
 }

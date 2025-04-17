@@ -37,8 +37,6 @@ function ContactPopup({ setShowContact }) {
 
   return (
     <div className="ContactPopup">
-      <div className="shadow"></div>
-      <img src={resouce.Contactbg} className="video-bg" alt="contact" />
       <i className="fa-solid fa-xmark close-icon" onClick={() => setShowContact(false)}></i>
 
       <form onSubmit={handleSubmit}>

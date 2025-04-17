@@ -1,61 +1,95 @@
+.header {
+  background: #fdfcf9;
+  position: fixed;
+  width: 100%;
+  z-index: 999999;
+  top: 0;
+}
+
 .slider-warapper {
-    width: 95%;
-    margin: 15px auto;
-    height: 50vh;
+  width: 100%;
+  margin: 0 auto;
+  height: 95vh;
+  overflow: hidden;
 }
+
+.slider-warapper .slick-next:before {
+  display: none;
+}
+
 .slick-slide img {
-    display: block;
-    width: 100%;
-    height: 50vh;
-    border-radius: 12px;
+  display: block;
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
 }
-.slide-show {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 41px;
+
+.best-seller h4 {
+  text-align: center;
+  font-size: 32px;
+  color: #0b474b;
+  margin: 40px 0 0; /* updated from 240px */
 }
+
 .slide-show {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
+  width: 70%;
+  overflow: hidden;
+  position: relative;
+  margin: 39px auto;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(200%);
+  animation: scroll 15s linear infinite;
+}
+
+.box img {
+  min-width: 200px;
+  height: 150px;
+  margin-right: 20px;
+  border-radius: 12px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
   }
-  
-  .slide-track {
-    display: flex;
-    width: calc(200%); 
-    animation: scroll 15s linear infinite;
+  100% {
+    transform: translateX(-50%);
   }
-  
-  .box img {
-    min-width: 200px;
-    height: 150px;
-    margin-right: 20px;
-    color: #fff;
-    font-size: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 12px;
-    flex-shrink: 0;
-  }
-  
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
- @media(max-width:475px){
+}
+
+@media (max-width: 475px) {
   .slider-warapper {
-    width: 87%;
-    margin: 0 auto;
-    height: 50vh;
+    padding-top: 0;
+  }
+
+  .slick-slide img {
+    height: 40vh;
+  }
+
+  .logo img {
+    height: 86px;
+  }
+
+  .best-seller h4 {
+    margin: 120px 0 0;
+  }
+  .slider-warapper {
+    height: fit-content;
 }
- } 
-@media(min-width:1650px){
-    .slider-warapper {
-        width: 70%;
-    }
+}
+
+@media (min-width: 1650px) {
+  .slider-warapper {
+    width: 100%;
+  }
+}
+@media(min-width:2000px){
+  .slider-warapper {
+    height: 85vh;
+}
 }

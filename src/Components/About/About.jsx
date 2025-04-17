@@ -4,7 +4,7 @@ import resouce from '../resouce'
 
 function About({setActive,active}) {
   return (
-    <div className='About' id='about'   style={active === 'manufacturing' ? { margin: '20px auto' } : {}}>
+    <div className='About' id='about'>
       <h3>Manufacturing At <br/><span>Gengross</span></h3>
       <hr />
       <div className="Quarter">

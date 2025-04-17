@@ -14,7 +14,13 @@ function AboutGengross() {
                 <img src={resouce.Founder} alt="founder" />
             </div>
             <div className="founder-row3">
-                <p style={{fontSize:'19px', color:'#0b474b',}}><span style={{fontSize:'22px', color:'#81037b',width:'100%',fontWeight:'800',margin:'0 10px'}}>Santosh Singh</span>The foundation of Genross was built on a strong vision—to revolutionize the healthcare industry with reliable, affordable, and high-quality medical products. Guided by innovation and integrity, our founder brought together expertise and purpose to create a brand that puts patient care first. Today, Genross stands as a trusted name in medical manufacturing, committed to improving lives through advanced, accessible solutions.</p>
+                <p style={{fontSize:'19px', color:'#0b474b',}}><span style={{fontSize:'22px', color:'#81037b',width:'100%',fontWeight:'800',margin:'0 10px'}}>Mr. Deepak Kumar,</span> Director of the company,
+                          holds a Diploma in Veterinary Science and an
+                    LL.B. from Bihar University. With over 20
+                     years of experience, he has worked as a paraveterinary teacher, manager in a veterinary
+                         medicine company, and poultry feed technical
+                             expert. His expertise drives the company’s
+                             growth in the animal health sector.</p>
             </div>
         </div>
         <hr style={{width:'80%', margin:'20px auto 30px'}} />

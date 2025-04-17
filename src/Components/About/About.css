@@ -1,7 +1,7 @@
 .About {
     top: 232px;
-    width: 85%;
-    margin: 23px auto 0;
+    width: 92%;
+    margin: 200px auto 0;
 }
 .About  h3 {
     font-size: 24px;
@@ -23,7 +23,7 @@
 }
 .col2 img {
     width: 100%;
-    border-radius: 12pc;
+    border-radius: 8px;
     height: 100%;
 }
 .col1 {
@@ -31,7 +31,7 @@
     align-items: center;
     width: 50%;
     height: 100%;
-    text-align: center;
+    text-align: left;
 }
 .col1 p {
     font-size: 22px;
@@ -47,16 +47,13 @@
     width: 50%;
     height: 100%;
 }
-@media(min-width:1200px){
+@media(min-width:1650px){
     .About {
-        width: 70%;
+        width: 90%;
     }
     .col2 {
        display: flex;
        justify-content: center;
-    }
-    .col2 img {
-        width: 80%;
     }
 }
 @media(max-width:768px){
@@ -65,15 +62,22 @@
         height: auto;
         align-items: center;
     }
+    .About {
+        top: 232px;
+        width: 85%;
+        margin: 32px auto 0;
+    }
     .l2{
         flex-direction: column-reverse !important;
     }
     .col2 img {
-        border-radius: 103px;
         height: 300px;
     }
     .col1,.col2{
         width: 100%;
+    }
+    .col1 {
+        text-align: center;
     }
 }
 @media(max-width:475px){

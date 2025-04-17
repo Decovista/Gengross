@@ -1,5 +1,4 @@
-import slide1 from '../../public/slide1.webp'
-import slide2 from '../../public/slide2.webp'
+
 import slide3 from '../../public/slide3.jpeg'
 import About1 from '../../public/About1.webp'
 import labs1 from '../../public/labs1.jpeg'
@@ -13,24 +12,20 @@ import servisl5 from '../../public/servsl5.jpeg'
 import Product1 from '../../public/Product1.webp'
 import Product2 from '../../public/Product2.jpeg'
 import Product3 from '../../public/Product3.webp'
-import video1 from '../../public/back-vid.mp4'
-import logo from '../../public/brand-logo.png'
 import HumanHealth1 from '../../public/Humanhealth1.webp'
 import HumanHealth2 from '../../public/Humanhealth2.webp'
 import HumanHealth3 from '../../public/Humanhealth3.jpeg'
 import HumanHealth4 from '../../public/Humanhealth4.webp'
-import Contactbg from '../../public/contact-bg.jpeg'
-import NewBanner1 from '../../public/new-banner1.png'
-import NewBanner3 from '../../public/new-banner3.png'
 import Founder from '../../public/founder.jpeg'
+import NewBrandLogo from '../../public/new-brand-logo.png'
 import onotherBaner from '../../public/another-new-b.png'
+import newBanner from '../../public/new-banner.png'
+import newBanner1 from '../../public/new-banner-3.jpg'
+
 
 
 const resouce = {
-   slide1,
-   slide2,
    slide3,
-   logo,
    About1,
    labs1,
    labs2,
@@ -43,16 +38,15 @@ const resouce = {
    Product1,
    Product2,
    Product3,
-   video1,
    HumanHealth1,
    HumanHealth2,
    HumanHealth3,
    HumanHealth4,
-   Contactbg,
-   NewBanner1,
-   NewBanner3,
    Founder,
-   onotherBaner
+   onotherBaner,
+   NewBrandLogo,
+   newBanner,
+   newBanner1
 };
 
 export default resouce;

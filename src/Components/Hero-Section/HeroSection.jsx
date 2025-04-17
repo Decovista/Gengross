@@ -22,13 +22,13 @@ function HeroSection() {
        <div className="slider-container">
       <Slider {...settings}>
         <div>
-          <img src={resouce.NewBanner1} />
+          <img src={resouce.newBanner} />
         </div>
         <div>
           <img src={resouce.onotherBaner} />
         </div>
         <div>
-          <img src={resouce.NewBanner3} />
+          <img src={resouce.newBanner1} />
         </div>
       
       </Slider>

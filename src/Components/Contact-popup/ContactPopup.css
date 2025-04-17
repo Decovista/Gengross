@@ -8,7 +8,10 @@
     box-shadow: -1px 0px 11px 1px gray;
     transform: scale(1.01);
     animation: slidein 0.5s ease forwards;
-    left: 18%;
+    background: linear-gradient(45deg, #36bd5f, #639fe9);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) !important;
 }
 @keyframes slidein {
     0% {
@@ -111,16 +114,7 @@ textarea {
     z-index: -1;
     border-radius: 19px;
   }
-  .shadow {
-    width: 100%;
-    height: 100%;
-    background: #000000;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.5;
-    border-radius: 17px;
-}
+ 
   @media(min-width:500px){
     .ContactPopup {
         min-width: 400px;
@@ -133,15 +127,9 @@ textarea {
         padding: 15px 15px;
         margin: 0 auto;
         margin-bottom: 52px;
-        left: 7%;
     }
     .ContactPopup i.fa-solid.fa-xmark {
         left: 29px;
         top: -37px;
-    }
-}
-@media (max-width: 320px) {
-    .ContactPopup {
-        left: 2%;
     }
 }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import resouce from '../resouce'
 import './Navigation.css'
@@ -6,6 +6,8 @@ import SubNav from '../Sub-Nav/SubNav'
 
 function Navigation({ setActive, active }) {
   const [toggleNav, setToggleNav] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+  const headerRef = useRef(null)
 
   const handleScrollToSection = (id, name) => {
     const section = document.getElementById(id)
@@ -15,8 +17,21 @@ function Navigation({ setActive, active }) {
     }
   }
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (headerRef.current) {
+        const headerHeight = headerRef.current.offsetHeight
+        const scrolledY = window.scrollY
+        setScrolled(scrolledY > headerHeight)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
-    <div className="header">
+    <div className={`header ${scrolled ? 'scrolled' : ''}`} ref={headerRef}>
       <div className='Navigation'>
         <div className="fist-row">
           <Link to='/Product'>
@@ -27,7 +42,7 @@ function Navigation({ setActive, active }) {
         </div>
         <div className="second-row">
           <div className="logo">
-            <img src={resouce.logo} alt="logo" />
+            <img src={resouce.NewBrandLogo} alt="logo" />
           </div>
           <div className="mobile-menu">
             <i className="fa-solid fa-bars" onClick={() => setToggleNav(true)}></i>
@@ -38,38 +53,34 @@ function Navigation({ setActive, active }) {
                 About Gengross
               </li>
             </Link>
-
-            <Link to='/AboutGengross'><li onClick={() => handleScrollToSection('services', 'news')} className={`${active === 'news' ? 'active' : ''}`}>
-              Services
-            </li></Link>
-
-            <Link to='/AboutGengross'><li onClick={() => handleScrollToSection('founder', 'Enviroment')} className={`${active === 'Enviroment' ? 'active' : ''}`}>
-              Founder
-            </li></Link>
-
+            <Link to='/AboutGengross'>
+              <li onClick={() => handleScrollToSection('services', 'news')} className={`${active === 'news' ? 'active' : ''}`}>
+                Services
+              </li>
+            </Link>
+            <Link to='/AboutGengross'>
+              <li onClick={() => handleScrollToSection('founder', 'Enviroment')} className={`${active === 'Enviroment' ? 'active' : ''}`}>
+                Founder
+              </li>
+            </Link>
             <li onClick={() => setActive('Offices')} className={`${active === 'Offices' ? 'active' : ''}`}>
               Order Status
             </li>
           </ul>
         </div>
       </div>
-      <ul className="bar">
-        <Link to='/'>
-          <li onClick={() => setActive('home')} className={`${active === 'home' ? 'active' : ''}`}>
-            Home
-          </li>
-        </Link>
-        <Link to="/Human">
-          <li onClick={() => setActive('human')} className={`${active === 'human' ? 'active' : ''}`}>
-            Human Health
-          </li>
-        </Link>
-        <Link to='/About'>
-          <li onClick={() => setActive('manufacturing')} className={`${active === 'manufacturing' ? 'active' : ''}`}>
-            Manufacturing
-          </li>
-        </Link>
-      </ul>
+
+      {/* Bar disappears when scrolled past header height */}
+      {!scrolled && (
+        <div className="bar-div">
+           <ul className="bar">
+          <Link to='/'><li onClick={() => setActive('home')} className={`${active === 'home' ? 'active' : ''}`}>Home</li></Link>
+          <Link to="/Human"><li onClick={() => setActive('human')} className={`${active === 'human' ? 'active' : ''}`}>Human Health</li></Link>
+          <Link to='/About'><li onClick={() => setActive('manufacturing')} className={`${active === 'manufacturing' ? 'active' : ''}`}>Manufacturing</li></Link>
+        </ul>
+        </div>
+      
+      )}
 
       {toggleNav && <SubNav setToggleNav={setToggleNav} />}
     </div>

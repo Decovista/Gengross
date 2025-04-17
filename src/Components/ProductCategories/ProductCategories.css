@@ -61,3 +61,9 @@
         width: 89%;
     }
 }
+@media(min-width:768px){
+    .Product-categories {
+        height: auto;
+        margin-top: 200px;
+    }
+}

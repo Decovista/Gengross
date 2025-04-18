@@ -70,9 +70,9 @@ function Navigation({ setActive, active }) {
         </div>
       </div>
 
-      {/* Bar disappears when scrolled past header height */}
       {!scrolled && (
         <div className="bar-div">
+          <div className="bar-shadow"></div>
            <ul className="bar">
           <Link to='/'><li onClick={() => setActive('home')} className={`${active === 'home' ? 'active' : ''}`}>Home</li></Link>
           <Link to="/Human"><li onClick={() => setActive('human')} className={`${active === 'human' ? 'active' : ''}`}>Human Health</li></Link>

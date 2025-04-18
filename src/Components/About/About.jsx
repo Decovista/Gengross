@@ -9,7 +9,7 @@ function About({setActive,active}) {
       <hr />
       <div className="Quarter">
         <div className="col1">
-         <p>Munfactururing, Marketing, Distribution all medicine and feed supplement Human, Animals anythings.To manufacture, formulate, process, develop, refine, import, export, wholesale and/or retail trade all kinds of pharmaceuticals products, medicines, drugs, medicines, biologicals, neutraceuticals, healthcare, ayurvedic and dietary supplement products, medicinal preparations, vaccines, chemicals, chemical products and dry salters.</p>
+         <p>To manufacture, market, and distribute all kinds of medicines and feed supplements for humans and animals. To manufacture, formulate, process, develop, refine, import, export, and engage in wholesale and/or retail trade of all types of pharmaceutical products, medicines, drugs, biologicals, nutraceuticals, healthcare products, ayurvedic and dietary supplements, medicinal preparations, vaccines, chemicals, chemical products, and dry salters.</p>
         </div>
         <div className="col2">
           <img src={resouce.About1} alt="About1" />
@@ -21,13 +21,13 @@ function About({setActive,active}) {
           <img src={resouce.labs2} alt="About1" />
         </div>
         <div className="col1">
-         <p> To engage in business of healthcares, life sciences, research and development, contract manufacturing in India and/or abroad.To manufacture, formulate, process, develop, refine, import, export, wholesale and/or retail trade in medicinal goods such as surgical instruments, contraceptives.</p>
+         <p>To engage in the business of healthcare, life sciences, research and development, and contract manufacturing in India and/or abroad. To manufacture, formulate, process, develop, refine, import, export, and engage in wholesale and/or retail trade of medicinal goods such as surgical instruments and contraceptives.</p>
         </div>
       </div>
       <hr />
       <div className="Quarter">
         <div className="col1">
-         <p>photographic goods, oils, perfumes, cosmetics, patent medicines, soaps, artificial limbs, hospital requisites, proprietary medicines, veterinary medicines and tinctures extracts and to carry on the business of vialling, bottling, repacking, processing of tablets, capsules, syrups, injections, ointments, etc. and also to carry on the business of chemists, druggists, buyers, sellers, agents, distributors and stockist of all kinds of pharmaceuticals and allied products.</p>
+         <p>To deal in photographic goods, oils, perfumes, cosmetics, patent medicines, soaps, artificial limbs, hospital requisites, proprietary medicines, veterinary medicines, and tinctures and extracts. To carry on the business of vialling, bottling, repacking, and processing of tablets, capsules, syrups, injections, ointments, etc. Also, to carry on the business as chemists, druggists, buyers, sellers, agents, distributors, and stockists of all kinds of pharmaceutical and allied products.</p>
         </div>
         <div className="col2">
           <img src={resouce.labs3} alt="About1" />

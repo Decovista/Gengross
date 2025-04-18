@@ -159,3 +159,20 @@
         margin-top: 163px;
     }
 }
+.sub-points span{
+    font-size: 16px;
+    color: #003045;
+    font-weight: 800;
+}
+.sub-points li{
+    font-size: 13px;
+    color: #3a6c81;
+    font-weight: 600;
+}
+.sub-points{
+    list-style: none;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}

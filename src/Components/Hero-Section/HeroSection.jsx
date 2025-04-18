@@ -1,53 +1,17 @@
 import React from 'react'
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import resouce from '../resouce';
 import './HeroSection.css'
 
 function HeroSection() {
-  const settings = {
-  dots: true,
-  fade: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  waitForAnimate: false,
-  autoplay: true,
-  autoplaySpeed: 3000,
-  };
   return (
-    <div className='slider-warapper'>
-       <div className="slider-container">
-      <Slider {...settings}>
-        <div>
-          <img src={resouce.newBanner} />
-        </div>
-        <div>
-          <img src={resouce.onotherBaner} />
-        </div>
-        <div>
-          <img src={resouce.newBanner1} />
-        </div>
-      
-      </Slider>
-    </div>
-    <div className="slide-show">
-      <div className="slide-track">
-        <div className="box"><img src={resouce.servisl1} alt="" /></div>
-        <div className="box"><img src={resouce.servisl2} alt="" /></div>
-        <div className="box"><img src={resouce.servisl3} alt="" /></div>
-        <div className="box"><img src={resouce.servisl4} alt="" /></div>
-        <div className="box"><img src={resouce.servisl5} alt="" /></div>
-
-        <div className="box"><img src={resouce.servisl1} alt="" /></div>
-        <div className="box"><img src={resouce.servisl2} alt="" /></div>
-        <div className="box"><img src={resouce.servisl3} alt="" /></div>
-        <div className="box"><img src={resouce.servisl4} alt="" /></div>
-        <div className="box"><img src={resouce.servisl5} alt="" /></div>
+    <div className='wrapper'>
+  <div className="shadow">
+  <h2>Gengross is a forward-thinking Meditech startup dedicated to revolutionizing the healthcare industry through cutting-edge technology and intelligent solutions. Our mission is to bridge the gap between medicine and innovation by creating smart, reliable, and accessible medical technologies that enhance patient care, improve diagnostics, and support healthcare professionals.</h2>
+  </div>
+  <div className='moto'>
+      <div class="parallax-banner">
       </div>
     </div>
+ 
     </div>
   )
 }

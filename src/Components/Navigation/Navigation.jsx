@@ -33,13 +33,6 @@ function Navigation({ setActive, active }) {
   return (
     <div className={`header ${scrolled ? 'scrolled' : ''}`} ref={headerRef}>
       <div className='Navigation'>
-        <div className="fist-row">
-          <Link to='/Product'>
-            <button className={`find ${active === 'find' ? 'active' : ''}`} onClick={() => setActive('find')}>
-              FindProduct
-            </button>
-          </Link>
-        </div>
         <div className="second-row">
           <div className="logo">
             <img src={resouce.NewBrandLogo} alt="logo" />
@@ -48,40 +41,30 @@ function Navigation({ setActive, active }) {
             <i className="fa-solid fa-bars" onClick={() => setToggleNav(true)}></i>
           </div>
           <ul className="nav">
+            <Link to='/'><li onClick={() => setActive('home')} className={active === 'home' ? 'active' : ''}>Home</li></Link>
             <Link to='/AboutGengross'>
-              <li onClick={() => setActive('about')} className={`${active === 'about' ? 'active' : ''}`}>
+              <li onClick={() => setActive('about')} className={active === 'about' ? 'active' : ''}>
                 About Gengross
               </li>
             </Link>
             <Link to='/AboutGengross'>
-              <li onClick={() => handleScrollToSection('services', 'news')} className={`${active === 'news' ? 'active' : ''}`}>
+              <li onClick={() => handleScrollToSection('services', 'news')} className={active === 'news' ? 'active' : ''}>
                 Services
               </li>
             </Link>
             <Link to='/AboutGengross'>
-              <li onClick={() => handleScrollToSection('founder', 'Enviroment')} className={`${active === 'Enviroment' ? 'active' : ''}`}>
+              <li onClick={() => handleScrollToSection('founder', 'Enviroment')} className={active === 'Enviroment' ? 'active' : ''}>
                 Founder
               </li>
             </Link>
-            <li onClick={() => setActive('Offices')} className={`${active === 'Offices' ? 'active' : ''}`}>
-              Order Status
-            </li>
+            <Link to='/Product'>
+              <button className={`find ${active === 'find' ? 'active' : ''}`} onClick={() => setActive('find')}>
+                FindProduct
+              </button>
+            </Link>
           </ul>
         </div>
       </div>
-
-      {!scrolled && (
-        <div className="bar-div">
-          <div className="bar-shadow"></div>
-           <ul className="bar">
-          <Link to='/'><li onClick={() => setActive('home')} className={`${active === 'home' ? 'active' : ''}`}>Home</li></Link>
-          <Link to="/Human"><li onClick={() => setActive('human')} className={`${active === 'human' ? 'active' : ''}`}>Human Health</li></Link>
-          <Link to='/About'><li onClick={() => setActive('manufacturing')} className={`${active === 'manufacturing' ? 'active' : ''}`}>Manufacturing</li></Link>
-        </ul>
-        </div>
-      
-      )}
-
       {toggleNav && <SubNav setToggleNav={setToggleNav} />}
     </div>
   )

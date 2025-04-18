@@ -10,9 +10,9 @@ function Contact({setShowContact}) {
         <ul className="cards">
         <h3>Contact Details</h3>
         <li><i class="fa-solid fa-location-dot"></i><p>Vipul bussiness Park</p></li>
-        <li><i class="fa-solid fa-location-dot"></i><p>office address 84478 </p></li>
-        <li><i class="fa-solid fa-phone"></i><p>7534785794</p></li>
-        <li><i class="fa-regular fa-envelope"></i><p>vivek@jhasfdh438758</p></li>
+        <li><i class="fa-solid fa-location-dot"></i><p>Gurgram || Patna || Bihar || NCR </p></li>
+        <li><i class="fa-solid fa-phone"></i><p>9708954645</p></li>
+        <li><i class="fa-regular fa-envelope"></i><p>gengross.lifescience@gmail.com</p></li>
       </ul>
       <div className="cards">
         <h3>Get-In Touch</h3>

@@ -25,3 +25,13 @@
     transform: translate(-50%, -50%);
     position: absolute;
   }
+  @media(max-width:768px){
+    .shadow h2{
+      font-size: 18px;
+    }
+  }
+  @media(max-width:500px){
+    .parallax-banner,.shadow {
+      height: 50vh; 
+  }
+  }

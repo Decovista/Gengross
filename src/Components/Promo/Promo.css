@@ -12,11 +12,6 @@
     max-width: 400px;
     border-radius: 17px;
 }
-.text-con span{
-  font-size:26px;
-  color:#760e76;
-  font-weight:800;
-}
 
 .text-con {
     display: flex;
@@ -94,7 +89,11 @@
 .Mission-card:hover p {
     display: block;
 }
-
+.text-con span {
+    font-size: 26px;
+    color: #510959;
+    font-weight: 800;
+}
 @keyframes slidein {
     0% {
         transform: translateY(100%);

@@ -71,8 +71,8 @@
     .cards {
         width: 100%;
     }
-    .cards:first-child{
-     width: fit-content;
+    .cards:first-child {
+        width: 100%;
     }
 }
 @media(max-width:500px){

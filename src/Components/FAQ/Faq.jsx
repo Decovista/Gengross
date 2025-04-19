@@ -33,18 +33,18 @@ function Faq() {
                 <h3>FAQ's</h3>
                 <ul>
                     {faqData.map((item, index) => (
-                        <li key={index}>
+                        <li key={index} onClick={() => handleToggle(index)}>
                             <div className='Faq-r1'>
                                 <p>{item.QA}</p>
                                 <i
-                                    onClick={() => handleToggle(index)}
                                     className={`fa-solid ${sequence === index ? 'fa-minus' : 'fa-plus'}`}
                                 ></i>
                             </div>
 
                             {sequence === index && (
                                 <ul className='sub-con'>
-                                    <li>{item.content}</li>
+                                    <li>
+                                        <p>{item.content}</p> </li>
                                 </ul>
                             )}
                         </li>

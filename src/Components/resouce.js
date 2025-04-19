@@ -21,6 +21,12 @@ import NewBrandLogo from '../../public/brand-logo.png'
 import onotherBaner from '../../public/another-new-b.png'
 import newBanner from '../../public/new-banner.png'
 import newBanner1 from '../../public/new-banner-3.jpg'
+import newMedia from '../../public/galler1.jpg'
+import newMedia1 from '../../public/galler2.jpg'
+import newMedia2 from '../../public/galler3.jpg'
+import newMedia3 from '../../public/galler4.jpg'
+import newMedia4 from '../../public/galler5.jpg'
+
 
 
 
@@ -46,7 +52,12 @@ const resouce = {
    onotherBaner,
    NewBrandLogo,
    newBanner,
-   newBanner1
+   newBanner1,
+   newMedia,
+   newMedia1,
+   newMedia2,
+   newMedia3,
+   newMedia4
 };
 
 export default resouce;

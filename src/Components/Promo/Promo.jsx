@@ -8,12 +8,9 @@ function Promo() {
     <div className='Promo-section'>
       <hr style={{width:'80%',color:'gray',margin:'40px auto'}} />
       <div className="promo-1">
-        <div className="img-con">
-          <img src={resouce.HumanHealth2} alt="img" />
-        </div>
         <div className="text-con">
           <h2>Our Vision</h2>
-          <p>"<span>Our vision is to transform the future of healthcare by creating a world where health and wellness are seamlessly integrated into everyday life.</span> <br/> We aim to bridge the gap between technology and personalized care, making high-quality healthcare accessible, proactive, and empowering for everyone—regardless of location or background. Through continuous innovation, data-driven solutions, and a human-first approach, we envision a healthier society where individuals are equipped to take control of their well-being and live longer, more fulfilling lives."</p>
+          <p>"<span> is to transform the future of healthcare by creating a world where health and wellness are seamlessly integrated into everyday life.</span> <br/> We aim to bridge the gap between technology and personalized care, making high-quality healthcare accessible, proactive, and empowering for everyone—regardless of location or background. Through continuous innovation, data-driven solutions, and a human-first approach, we envision a healthier society where individuals are equipped to take control of their well-being and live longer, more fulfilling lives."</p>
            
         </div>
       </div>
@@ -40,7 +37,7 @@ function Promo() {
           </div>
         </div>
       </div>
-      <hr style={{width:'80%',color:'gray',margin:'80px auto'}} />
+      <hr style={{width:'80%',color:'gray',margin:'49px auto'}} />
     </div>
   )
 }

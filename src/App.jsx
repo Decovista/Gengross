@@ -12,6 +12,7 @@ import ProductCategories from './Components/ProductCategories/ProductCategories'
 import Faq from './Components/FAQ/Faq';
 import AboutGengross from './Components/About-Gengross/AboutGengross';
 import ProductGallery from './Components/ProductGallery/ProductGallery';
+import Media from './Pages/Media/Media';
 
 function App() {
   const [active, setActive] = useState('home');
@@ -43,6 +44,7 @@ function App() {
             <Route path="/Product" element={<><ProductCategories  onCategoryChange={handleCategoryChange} setSelectedCategory={setSelectedCategory} selectedCategory={selectedCategory} /><ProductGallery setShowContact={setShowContact} showContact={showContact} selectedCategory={selectedCategory} /></>} />
             <Route path='/FAQ' element={<Faq/>}/>
             <Route path='/AboutGengross' element={<AboutGengross/>} />
+            <Route path='/Media' element={<Media/>} />
           </Routes>
           <Footer />
         </>

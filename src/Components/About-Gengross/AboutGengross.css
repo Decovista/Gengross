@@ -1,14 +1,21 @@
 
-.founder-row1 img {
-    transform: rotateY(0deg);
-    transition: transform 1s ease;
-    transform-style: preserve-3d;
+  .founder-row1 img {
     width: 156px;
     height: 151px;
     border-radius: 103px;
+    transition: transform 1.5s ease-in-out;
+    transform-style: preserve-3d;
     margin: 0 auto;
-    will-change: transform;
   }
+  .cards h2 {
+    font-size: 22px;
+    color: #3a6c81;
+    margin: 10px 0;
+}
+.cards p {
+  font-size: 13px;
+  color: #163d60;
+}
   .founder-row1 img.visible {
     transform: rotateY(180deg);
   }

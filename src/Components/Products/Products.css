@@ -5,7 +5,7 @@
 }
 .Products {
     width: 90%;
-    margin: 0 auto;
+    margin: 5px auto 46px;
 }
 
 @media (min-width: 440px) and (max-width: 768px) {

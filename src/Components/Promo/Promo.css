@@ -24,10 +24,9 @@
 }
 
 .text-con h2 {
-    font-size: 27px;
+    font-size: 32px;
     color: #003045;
     font-weight: 900;
-    text-decoration: underline;
     padding-bottom: 20px;
 }
 
@@ -91,7 +90,7 @@
 }
 .text-con span {
     font-size: 26px;
-    color: #510959;
+    color: #2576af;
     font-weight: 800;
 }
 @keyframes slidein {
@@ -116,7 +115,7 @@
     flex-direction: column;
     margin: 0 auto;
 }
-@media(max-width:968px){
+@media(max-width:1024px){
     .promo-1 {
         display: flex;
         flex-direction: column-reverse;
@@ -126,6 +125,10 @@
     .Promo-section {
         height: auto;
         margin-top: 12px;
+    }
+    .text-con span {
+        font-size: 17px;
+        font-weight: 800;
     }
 }
 @media(max-width:768px){
@@ -158,6 +161,12 @@
         margin-top: 163px;
     }
 }
+@media (max-width: 1000px) {
+    .text-con h2 {
+        font-size: 22px;
+    }
+}
+
 .sub-points span{
     font-size: 16px;
     color: #003045;

@@ -71,7 +71,7 @@ button.find {
     letter-spacing: 2px;
 
 }
-  .nav li .active:hover::after {
+  .nav .active:hover::after {
     display: none;
   }
   .mobile-menu{
@@ -151,5 +151,8 @@ button.find {
   
   .nav li .active:hover::after {
     display: none;
+  }
+  .nav-item {
+    position: relative;
   }
   

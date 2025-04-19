@@ -10,12 +10,13 @@
     display: flex;
     margin: 16px 0;
     padding: 15px 14px;
-    box-shadow: 0px 1px 2px 1px #b9b9b9;
+    box-shadow: 0px 1px 2px 1px #dddddd;
     border-radius: 2px;
     cursor: pointer;
     flex-direction: column;
     transition: 1s ease;
     user-select: none;
+    background: #fff;
 }
 .Faq-r1 {
     display: flex;
@@ -34,4 +35,21 @@
     background: linear-gradient(45deg, #e3e3e3b8, #0a070700);
     padding: 0;
     margin: 0;
+}
+.Faq-r1 p {
+    flex: 1; 
+    margin: 0;
+    word-break: break-word; 
+    white-space: normal; 
+  }
+  
+  .sub-con p {
+    margin: 0;
+    word-break: break-word;
+    white-space: normal;
+  }
+@media(max-width:768px){
+    .Faq-section {
+        width: 90%;
+    }
 }

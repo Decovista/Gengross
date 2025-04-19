@@ -11,7 +11,7 @@
     margin: 38px 0;
     display: flex;
     justify-content: space-around;
-    margin: 26px auto 96px;
+    margin: 26px auto 45px;
 }
 .Category-sidebar ul {
     list-style: none;
@@ -47,8 +47,7 @@
             border-radius: 7px;
             transform: scale(1.02);
             margin: 38px 0;
-            display: flex
-    ;
+            display: flex;
             justify-content: space-around;
             margin: 22px auto;
         }
@@ -64,6 +63,6 @@
 @media(min-width:768px){
     .Product-categories {
         height: auto;
-        margin-top: 200px;
+        margin: 119px auto 54px !important;
     }
 }

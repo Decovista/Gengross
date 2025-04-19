@@ -1,0 +1,25 @@
+.media img {
+    width: 300px;
+    height: 300px;
+    border-radius: 12px;
+}
+.media{
+    margin: 119px auto !important;
+    width: 70%;
+}
+.media h3{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 28px;
+    color: #003045;
+}
+ul.media-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+@media(max-width:768px){
+    ul.media-content {
+        width: 100%;
+    }
+}

@@ -21,7 +21,7 @@ function SplashScreen({ onFinish }) {
 
   return (
     <div className="splash-container">
-      <div class="spinner"></div>
+      <div class="spinner">Hii</div>
     </div>
   );
 }

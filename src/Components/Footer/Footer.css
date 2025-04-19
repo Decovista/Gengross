@@ -4,17 +4,6 @@
     padding: 6px 0;
     position: relative;
 }
-.Footer-wrapper::after {
-    content: '';
-    position: absolute;
-    top: -30px;
-    background-color: #fff;
-    width: 80%;
-    height: 70px;
-    margin: 0 auto;
-    left: 10%;
-    border-radius: 40px;
-}
 .Footer {
     width: 70%;
     margin: 0 auto;

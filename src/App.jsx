@@ -13,6 +13,8 @@ import Faq from './Components/FAQ/Faq';
 import AboutGengross from './Components/About-Gengross/AboutGengross';
 import ProductGallery from './Components/ProductGallery/ProductGallery';
 import Media from './Pages/Media/Media';
+import Career from './Pages/Career/Career';
+import GenericMedicine from './Pages/Generic-medicine/GenericMedicine';
 
 function App() {
   const [active, setActive] = useState('home');
@@ -45,6 +47,8 @@ function App() {
             <Route path='/FAQ' element={<Faq/>}/>
             <Route path='/AboutGengross' element={<AboutGengross/>} />
             <Route path='/Media' element={<Media/>} />
+            <Route path='/Career' element={<Career />} />
+            <Route path='/Generic' element={<GenericMedicine/>} />
           </Routes>
           <Footer />
         </>

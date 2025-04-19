@@ -1,70 +1,125 @@
+.About-gengross {
+  padding: 40px 20px;
+  background-color: #f7f9fc;
+}
 
-  .founder-row1 img {
-    width: 156px;
-    height: 151px;
-    border-radius: 103px;
-    transition: transform 1.5s ease-in-out;
-    transform-style: preserve-3d;
-    margin: 0 auto;
-  }
-  .cards h2 {
-    font-size: 22px;
-    color: #3a6c81;
-    margin: 10px 0;
+.About-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.cards p {
-  font-size: 13px;
-  color: #163d60;
+
+.section-title {
+  text-align: center;
+  font-size: 30px;
+  color: #b37801;
+  margin-bottom: 10px;
 }
-  .founder-row1 img.visible {
-    transform: rotateY(180deg);
-  }
-.founder-row1 img:hover {
-    transform: rotateY(180deg);
-    transform-style: preserve-3d;
-    transition: transform 0.6s ease;
-  }
-.founder-row1 {
-    width: 100%;
-    display: flex;
-    margin: 20px 0;
+
+.section-divider {
+  width: 80%;
+  margin: 20px auto 30px;
+  border: none;
+  border-top: 2px solid #ccc;
 }
+.founder-row1.aos-init.aos-animate {
+  width: 44%;
+}
+.founders {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.founder-row1 img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  object-fit: cover;
+}
+
+.founder-row3 {
+  flex: 1;
+}
+
 .founder-row3 p {
-    width: 78%;
-    margin: 26px auto 50px;
-    text-align: center;
-    line-height: 1.5;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #0b474b;
 }
-.team {
-    width: 80%;
-    margin: 0 auto;
+
+.founder-name {
+  font-size: 24px;
+  color: #3a6c81;
+  font-weight: 800;
 }
-.leaderships .cards img {
-    width: 150px;
-    height: 150px;
-    border-radius: 82px;
+
+.leaderships {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.cards {
+  background-color: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.cards:hover {
+  transform: translateY(-5px);
+}
+
+.cards img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.cards h2 {
+  margin: 15px 0 10px;
+  font-size: 20px;
+  color: #3a6c81;
+}
+
+.cards p {
+  font-size: 14px;
+  color: #333;
+}
+.cards.aos-animate.aos-init {
+  width: 100%;
 }
 .leaderships {
-    display: flex;
-    justify-content: space-around;
-    margin: 40px 0;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-.leaderships .cards {
-    max-width: 240px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    box-shadow: 2px 3px 12px 5px gray;
-}
-@media(min-width:768px){
-  .About-gengross {
-    margin-top: 10%;
-}  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 92px;
+  margin-top: 20px;
+  padding-right: 37px;
+
 }
 
+
+@media (max-width: 768px) {
+  .founders {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .founder-row3 p {
+    font-size: 16px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+}

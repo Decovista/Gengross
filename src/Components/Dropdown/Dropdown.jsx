@@ -12,8 +12,8 @@ function Dropdown({ type, setClickTracker }) {
   ];
 
   const services = [
-    { title: 'Consultancy', path: '/consultancy' },
-    { title: 'Telehealth Services', path: '/telehealth' },
+    { title: 'Career', path: '/Career' },
+    { title: 'Generic Medicine', path: '/Generic' },
     { title: 'Diagnostic Solutions', path: '/diagnostic' },
     { title: 'Healthcare Software', path: '/software' }
   ];

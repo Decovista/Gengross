@@ -1,0 +1,169 @@
+:root {
+    --primary: #00796b;
+    --primary-light: #e0f2f1;
+    --accent: #009688;
+    --text-dark: #1b1b1b;
+    --text-light: #666;
+    --background: #ffffff;
+  }
+  
+  .generic-service-page {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    color: var(--text-dark);
+    background: var(--background);
+  }
+  
+  .service-header h1 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 5px;
+  }
+  
+  .service-header p {
+    font-size: 1.2rem;
+    color: var(--text-light);
+  }
+  
+  .service-intro p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-top: 20px;
+    color: var(--text-dark);
+  }
+  
+  .service-benefits h2,
+  .service-categories h2 {
+    color: var(--primary);
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+  }
+  
+  .service-benefits ul {
+    padding-left: 20px;
+    color: var(--text-dark);
+  }
+  
+  .service-benefits li {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    line-height: 1.6;
+    max-width: 100%;
+  }
+  
+  .service-benefits li::before {
+    content: '✔';
+    position: absolute;
+    left: -20px;
+    color: var(--accent);
+  }
+  
+  .categories-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 15px;
+  }
+  
+  .category-box {
+    flex: 1 1 180px;
+    background-color: var(--primary-light);
+    color: var(--primary);
+    padding: 15px 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+  }
+  
+  .service-cta {
+    text-align: center;
+    margin-top: 60px;
+  }
+  
+  .service-cta h3 {
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 10px;
+  }
+  
+  .service-cta p {
+    font-size: 1rem;
+    color: var(--text-light);
+    margin-bottom: 20px;
+  }
+  
+  .service-cta button {
+    background-color: var(--accent);
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .service-cta button:hover {
+    background-color: #00695c;
+  }
+  
+  @media (max-width: 768px) {
+    .service-header h1 {
+      font-size: 2rem;
+    }
+  
+    .service-header p,
+    .service-intro p,
+    .service-cta p {
+      font-size: 1rem;
+    }
+  
+    .category-box {
+      flex: 1 1 100%;
+    }
+  
+    .service-cta h3 {
+      font-size: 1.3rem;
+    }
+  
+    .service-cta button {
+      width: 100%;
+      padding: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .generic-service-page {
+      padding: 30px 15px;
+    }
+  
+    .service-header h1 {
+      font-size: 1.6rem;
+    }
+  
+    .service-benefits h2,
+    .service-categories h2 {
+      font-size: 1.2rem;
+    }
+  
+    .service-cta h3 {
+      font-size: 1.1rem;
+    }
+  
+    .category-box {
+      font-size: 0.95rem;
+      padding: 12px 15px;
+    }
+  }
+  @media (max-width: 768px) {
+    li {
+      font-size: 1rem;
+      line-height: 1.5;
+      word-break: break-word;
+    }
+  }

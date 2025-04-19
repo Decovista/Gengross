@@ -17,6 +17,7 @@
     width: 100%;
     justify-content: space-around;
     margin: 36px 0;
+    gap: 24px;
 }
 .cards li {
     list-style: none;

@@ -14,14 +14,15 @@ function SplashScreen({ onFinish }) {
         }
         return prev + 2; 
       });
-    }, 40); 
+    }, 60); 
 
     return () => clearInterval(interval);
   }, [onFinish]);
 
   return (
     <div className="splash-container">
-      <div class="spinner">Hii</div>
+    <span class="loader"></span>
+    <h2>Gengross</h2>
     </div>
   );
 }

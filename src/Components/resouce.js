@@ -26,7 +26,10 @@ import newMedia1 from '../../public/galler2.jpg'
 import newMedia2 from '../../public/galler3.jpg'
 import newMedia3 from '../../public/galler4.jpg'
 import newMedia4 from '../../public/galler5.jpg'
-
+import career1 from '../../public/consaltancy1.jpg'
+import career2 from '../../public/consaltancy2.jpg'
+import career3 from '../../public/consaltancy3.jpg'
+import career4 from '../../public/consaltancy4.jpg'
 
 
 
@@ -57,7 +60,11 @@ const resouce = {
    newMedia1,
    newMedia2,
    newMedia3,
-   newMedia4
+   newMedia4,
+   career1,
+   career2,
+   career3,
+   career4
 };
 
 export default resouce;

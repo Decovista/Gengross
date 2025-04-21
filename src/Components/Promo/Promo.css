@@ -12,17 +12,15 @@
     max-width: 400px;
     border-radius: 17px;
 }
-
 .text-con {
     display: flex;
     justify-content: center;
-    padding: 30px;
+    padding: 0 16px;
     flex-direction: column;
     color: #003045;
     font-weight: 600;
     font-family: foco, Roboto, Arial, sans-serif;
 }
-
 .text-con h2 {
     font-size: 32px;
     color: #003045;
@@ -39,6 +37,7 @@
     overflow: hidden;
     position: relative;
     cursor: pointer;
+    transition: ease-in 2s;
 }
 .promo-2 h3 {
     text-align: center;
@@ -58,19 +57,15 @@
     color: #fff;
     padding: 12px;
     margin: 0;
-}
-
-.Mission-card img {
-    width: 100%;
-    height: 76%;
-    object-fit: cover;
+    position: absolute;
+    bottom: 0;
 }
 
 .Mission-card p {
     display: none;
     height: 100%;
     width: 100%;
-    background: linear-gradient(45deg, #2576af, #23a18a);
+    background: transparent;
     color: #fff;
     padding: 12px;
     animation: slidein 1.5s ease forwards;
@@ -84,9 +79,13 @@
 .Mission-card:hover{
     background: linear-gradient(45deg, #2576af, #23a18a);
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .Mission-card:hover p {
     display: block;
+    height: fit-content;
 }
 .text-con span {
     font-size: 26px;
@@ -142,7 +141,7 @@
         font-size: 13px;
     }
     .Mission-wrapper img {
-        height: 80%;
+        height: 100%;
     }
     .Mission-card p {
         font-size: 14px;
@@ -183,4 +182,12 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+.Mission-card.aos-init.aos-animate {
+    border-radius: 17px;
+}
+@media (max-width: 500px) {
+    .shadow h2 {
+        font-size: 13px !important;
+    }
 }

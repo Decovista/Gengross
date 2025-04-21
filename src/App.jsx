@@ -4,9 +4,7 @@ import Home from './Pages/Home/Home';
 import './App.css';
 import Navigation from './Components/Navigation/Navigation';
 import Footer from './Components/Footer/Footer';
-import HumanHealth from './Pages/HumanHealth/HumanHealth';
 import About from './Components/About/About';
-import Products from './Components/Products/Products';
 import SplashScreen from './Components/SplashScreen/SplashScreen';
 import ProductCategories from './Components/ProductCategories/ProductCategories';
 import Faq from './Components/FAQ/Faq';
@@ -41,7 +39,6 @@ function App() {
               path="/"
               element={<Home setShowContact={setShowContact} showContact={showContact} />}
             />
-            <Route path="/Human" element={<HumanHealth />} />
             <Route path="/About" element={<About active={active} setActive={setActive} />} />
             <Route path="/Product" element={<><ProductCategories  onCategoryChange={handleCategoryChange} setSelectedCategory={setSelectedCategory} selectedCategory={selectedCategory} /><ProductGallery setShowContact={setShowContact} showContact={showContact} selectedCategory={selectedCategory} /></>} />
             <Route path='/FAQ' element={<Faq/>}/>

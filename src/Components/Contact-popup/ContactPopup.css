@@ -8,7 +8,7 @@
     box-shadow: -1px 0px 11px 1px gray;
     transform: scale(1.01);
     animation: slidein 0.5s ease forwards;
-    background: linear-gradient(45deg, #36bd5f, #639fe9);
+    background: linear-gradient(135deg, #0b474b, #143f6b);
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) !important;

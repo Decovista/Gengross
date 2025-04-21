@@ -15,16 +15,32 @@
 }
 ul.side {
   list-style: none;
+  width: 75%;
+  text-align: center;
 }
-ul.side a  {
+ul.side a , ul.side li h4 {
   margin: 18px 0 0;
   font-size: 22px;
   text-decoration: none;
   color: #0b474b;
 }
+ul.side li h4 {
+  font-size: 17px;
+  font-weight: 100;
+  margin: 0;
+}
+ul.mobile-sub-menu {
+  width: 90%;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+ul.mobile-sub-menu li {
+border: none;
+box-shadow: 1px 0px 7px 2px gray;
+}
 ul.side li{
   margin:18px 0 0;
-  padding-bottom: 10px;
+  padding-bottom: 23px;
   border-bottom: 1px solid gray;
 }
 

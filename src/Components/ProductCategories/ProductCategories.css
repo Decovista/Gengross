@@ -5,7 +5,6 @@
     height: auto;
     width: 33%;
     padding: 2px 21px;
-    box-shadow: 0px 0px 10px 2px #dfd7d7;
     border-radius: 7px;
     transform: scale(1.02);
     margin: 38px 0;
@@ -26,7 +25,7 @@
     margin: 15px 0;
     font-weight: 500;
     color: #163d60;
-    box-shadow: 1px 0px 6px 1px;
+    box-shadow: 0px 3px 4px 4px #e1d9d9;
     padding: 11px;
     border-radius: 4px;
     user-select: none;
@@ -38,17 +37,27 @@
     transform: scale(1.08);
     box-shadow: 2px 3px 7px 3px rgb(229 174 217);
 }
+button.globle-btn {
+    position: absolute;
+    bottom: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    max-width: 80%;
+    height: 35px;
+    color: #fff;
+    font-weight: 700;
+    background: linear-gradient(45deg, #378dbb, #4cc9c9);
+    border: none;
+    border-radius: 11px;
+    cursor: pointer;
+}
+
 @media(max-width:768px){
         .Category-sidebar {
-            height: auto;
             width: 79%;
             padding: 8px 11px;
-            box-shadow: 3px 1px 10px 2px #dfd7d7;
-            border-radius: 7px;
-            transform: scale(1.02);
-            margin: 38px 0;
             display: flex;
-            justify-content: space-around;
             margin: 22px auto;
         }
     .Category-sidebar ul h3 {
@@ -63,6 +72,6 @@
 @media(min-width:768px){
     .Product-categories {
         height: auto;
-        margin: 119px auto 54px !important;
+        margin: 49px auto 54px !important;
     }
 }

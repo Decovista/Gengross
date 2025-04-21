@@ -26,6 +26,7 @@
     gap: 24px;
     border-bottom: 1px solid #003045;
     padding: 15px;
+    transition: 0.4s ease-in;
 }
 .cards {
     width: 50%;
@@ -34,10 +35,18 @@
     padding: 20px;
     justify-content: center;
 }
+.cards li:hover{
+    transform: scale(1.1);
+    border: none;
+    box-shadow: 1px 1px 11px 4px rgb(175 170 170);
+    margin-top: 10px;
+}
 .cards p,
-.cards a {
+.cards a,.cards i {
   font-size: 14px;
-  color: #333;
+  color: #01473b !important;
+  font-size: 15px !important;
+  font-weight: 600;
   display: block;
   white-space: normal;
   overflow-wrap: anywhere;

@@ -22,6 +22,11 @@
     display: flex;
     justify-content: space-between;
 }
+.Faq-r1 p, .sub-con p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #01473b;
+}
 .Faq-section ul li:hover {
     transform: scale(1.07);
 }

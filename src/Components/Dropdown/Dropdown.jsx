@@ -14,8 +14,6 @@ function Dropdown({ type, setClickTracker }) {
   const services = [
     { title: 'Career', path: '/Career' },
     { title: 'Generic Medicine', path: '/Generic' },
-    { title: 'Diagnostic Solutions', path: '/diagnostic' },
-    { title: 'Healthcare Software', path: '/software' }
   ];
 
   useEffect(() => {

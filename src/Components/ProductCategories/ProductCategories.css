@@ -47,9 +47,9 @@ button.globle-btn {
     height: 35px;
     color: #fff;
     font-weight: 700;
-    background: linear-gradient(45deg, #378dbb, #4cc9c9);
+    background: linear-gradient(135deg, #0b474b, #143f6b);
     border: none;
-    border-radius: 11px;
+    border-radius: 6px;
     cursor: pointer;
 }
 

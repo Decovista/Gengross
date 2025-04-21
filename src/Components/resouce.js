@@ -30,7 +30,9 @@ import career1 from '../../public/consaltancy1.jpg'
 import career2 from '../../public/consaltancy2.jpg'
 import career3 from '../../public/consaltancy3.jpg'
 import career4 from '../../public/consaltancy4.jpg'
-
+import manufacturing5 from '../../public/manufacturing1.jpg'
+import manufacturing6 from '../../public/manufacturing2.jpg'
+import ComingSoon from '../../public/ComingSoon.png'
 
 
 const resouce = {
@@ -64,7 +66,10 @@ const resouce = {
    career1,
    career2,
    career3,
-   career4
+   career4,
+   manufacturing5,
+   manufacturing6,
+   ComingSoon
 };
 
 export default resouce;

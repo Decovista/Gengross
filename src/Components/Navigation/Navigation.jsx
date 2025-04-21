@@ -37,7 +37,7 @@ function Navigation({ setActive, active }) {
       <div className="Navigation">
         <div className="second-row">
           <div className="logo">
-            <img src={resouce.NewBrandLogo} alt="logo" />
+            <Link to="/"><img src={resouce.NewBrandLogo} alt="logo" /></Link>
           </div>
           <div className="mobile-menu">
             <i className="fa-solid fa-bars" onClick={() => setToggleNav(true)}></i>

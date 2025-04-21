@@ -68,7 +68,7 @@ function Products({ setShowContact, showContact }) {
         <Slider {...settings}>
           {cardData.map((item, index) => (
             <div className="card" key={index}>
-              <img src={item.profile} alt={`product-${index}`} />
+              <img src={resouce.ComingSoon} alt={`product-${index}`} />
               <h3>{item.name}</h3>
               <p>{item.desc}</p>
               <button className='globle-btn' onClick={() => setShowContact(true)}>Get</button>

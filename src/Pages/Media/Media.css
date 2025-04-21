@@ -22,4 +22,8 @@ ul.media-content {
     ul.media-content {
         width: 100%;
     }
+    .media {
+         margin: 0 !important; 
+        width: 100%;
+    }
 }

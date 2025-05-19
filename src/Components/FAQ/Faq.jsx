@@ -18,11 +18,15 @@ function Faq() {
             content: 'Gengross delivers real value to its customers by providing high-quality, affordable, and reliable pharmaceutical products that meet international regulatory standards. Whether you are a healthcare provider, pharmaceutical distributor, or contract partner, Gengross ensures consistent access to the medicines you need—when you need them.'
         },
         {
-            QA: 'What pharmaceutical formulations does Gengross manufacture?',
-            content: 'Gengross manufactures a wide range of pharmaceutical formulations, including tablets, capsules, syrups, suspensions, injectables, and nutraceuticals. We also offer customized and contract manufacturing solutions, all developed under strict GMP standards to ensure quality, safety, and global compliance.'
+            QA: 'Is your service accessible in rural or low-connectivity areas?',
+            content: 'Yes. Accessibility is a core part of our mission. We offer lightweight mobile applications, offline support options, and partner with local healthcare providers to extend our reach—even to areas with limited internet access or medical infrastructure.'
+        },
+        {
+            QA: 'How do your healthcare solutions ensure personalized care?',
+            content: 'We use advanced data analytics and smart technologies to tailor health insights, treatment plans, and wellness recommendations to each individual’s needs, lifestyle, and medical history. Our platform learns and adapts, providing a truly personalized care experience.'
         }
     ]
-
+    
     const handleToggle = (index) => {
         setSequence(prev => (prev === index ? null : index))
     }
@@ -30,7 +34,7 @@ function Faq() {
     return (
         <>
             <div className='Faq-section'>
-                <h3>FAQ's</h3>
+                <h3>Frequently Asked Questions.</h3>
                 <ul>
                     {faqData.map((item, index) => (
                         <li key={index} onClick={() => handleToggle(index)}>

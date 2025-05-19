@@ -1,41 +1,8 @@
-
-.parallax-banner {
-  height: 100vh;
-  width: 100%;
-  background-image: url('../../../public/celebration.png');
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.shadow{
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  background: #020202;
-  opacity: 70%;
-}
-.shadow h2{
-  text-align: center;
-  font-size: 32px;
-  font-weight: 900;
-  width: 80%;
-  color: #fff;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-}
-@media (max-width: 600px) {
-  .shadow h2 {
-    font-size: 18px;
-    width: 90%;
-    top: 48%;
-  }
-  .parallax-banner {
-    height: 50vh;
-  }
-  .shadow{
-    height: 50vh;
-  }
+.slide1 {
+    background: url(/public/galler1.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
 }

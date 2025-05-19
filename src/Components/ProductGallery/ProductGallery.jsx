@@ -5,16 +5,14 @@ import ContactPopup from '../Contact-popup/ContactPopup';
 
 function ProductGallery({ selectedCategory, setShowContact, showContact}) {
   const Products = [
-    { id: '1', category: 'bestSellers', title: 'Product', picture: resouce.Product1,
-    description: 'Loading.........', },
-    { id: '2', category: 'bundle', picture: resouce.Product2, title: 'Product', description: 'Loading.........', },
-    { id: '3', category: 'bestSellers', title: 'Product',  picture: resouce.Product2,
-    description: 'Loading.........', },
-    { id: '4', category: 'bundle', picture: resouce.HumanHealth1, title: 'Product', description: 'Loading.........' },
-    { id: '5', category: 'bestSellers', title: 'Product', picture: resouce.Product3,
-        description: 'Loading.........', },
-    { id: '6', category: 'bestSellers',  title: 'Product ', picture: resouce.Product1,
-     description: 'Loading.........', }
+    { id: '1', category: 'bestSellers', title: 'Neprogen', picture: resouce.productreal1,
+    description: 'Optimizes Production & Renal Functions', },
+    { id: '2', category: 'bundle', picture: resouce.productreal2, title: 'Poul Guard liquid', description: 'Protect from bacteria & Fungal Infections', },
+    { id: '3', category: 'bestSellers', title: 'Livogen',  picture: resouce.productreal3,
+    description: 'Liver liquid feed supplement for cattle, Livestock & poultry', },
+    { id: '4', category: 'bundle', picture: resouce.productreal4, title: 'Poulgrow-p', description: 'Liquid Feed supplement for poultry' },
+    { id: '5', category: 'bestSellers', title: 'Genferol', picture: resouce.productreal5,
+        description: 'Malt Based Vitamins.', },
   ];
 
   const filteredProducts = selectedCategory === 'all'
@@ -23,10 +21,11 @@ function ProductGallery({ selectedCategory, setShowContact, showContact}) {
 
   return (
     <div className='Productgallery'>
+      <h1>Products</h1>
       <div className="products">
         {filteredProducts.map(product => (
           <div key={product.id} className="product-card">
-           <img src={resouce.ComingSoon} alt="product" />
+           <img src={product.picture} alt="product" />
             <h4>{product.title}</h4>
             <p>{product.description}</p>
             <button className='globle-btn' onClick={() => setShowContact(true)}>Get</button>

@@ -1,5 +1,5 @@
 .Contact {
-    width: 80%;
+    width: 90%;
     display: flex;
     height: auto;
     flex-direction: column;
@@ -16,7 +16,7 @@
     display: flex;
     width: 100%;
     justify-content: space-around;
-    margin: 36px 0;
+    margin: 80px 0 26px;
     gap: 24px;
 }
 .cards li {
@@ -83,6 +83,7 @@
 @media(min-width:1300px){
     .Contact {
         width: 80%;
+        margin: 85px auto;
     }
 }
 @media(max-width:768px){

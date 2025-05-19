@@ -25,7 +25,7 @@ function Contact({ setShowContact }) {
               target="_blank"
                rel="noopener noreferrer"
                >
-               Central Park II Rd, Vipul World, Sector 48, Gurugram, Haryana 122004
+               Unit No. 417, 4th Floor, Vipul Business Park, Sector 48, Main Sohna Road, Gurugram-122011.
               </a>
           </li>
           <li>

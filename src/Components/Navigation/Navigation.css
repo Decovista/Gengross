@@ -1,19 +1,17 @@
 .header{
-  background-color: #fdfcf9;
+  background: linear-gradient(135deg, #0b474b, #143f6b);
 }
 .logo img {
-    height: 83px;
-    width: 118px;
-    top: 0;
-    top: 1%;
+  height: 101px;
+  width: 149px;
+  top: 0;
 }
 .Navigation {
     display: flex;
-    width: 85%;
+    width: 95%;
     justify-content: space-between;
     margin: 0 auto;
     flex-direction: column;
-    padding: 10px 0 0 0;
 }
 .bar-shadow {
     background-color: black;
@@ -53,10 +51,12 @@
 .nav li {
     margin: 10px;
     line-height: 1em;
-    color: #003045 !important;
+    color: #fff !important;
     padding: 22px 0 21px 0;
     margin: 0 22px;
-}
+    position: relative;
+    cursor: pointer;
+  }
 .second-row {
     display: flex;
     justify-content: space-between;
@@ -75,6 +75,7 @@ button.find {
     font-weight: 700 !important;
     text-transform: uppercase;
     letter-spacing: 2px;
+    border: 1px solid #fff;
 
 }
   .nav .active:hover::after {
@@ -121,29 +122,20 @@ button.find {
        position: unset;
     }
 }
-
-.nav li {
-    margin: 10px;
-    line-height: 1em;
-    color: #003045 !important;
-    padding: 22px 0 21px 0;
-    margin: 0 22px;
-    position: relative;
-    cursor: pointer;
-  }
-  
-  .nav li::after {
+.nav li::after {
     content: "";
     position: absolute;
     bottom: 0;
     left: 50%;
     width: 0;
     height: 2px;
-    background-color: #003045;
+    background-color: #fff;
     transition: width 0.4s ease-in-out, left 0.4s ease-in-out;
     transform-origin: center;
   }
-  
+ .Dropdown-About ul  a li, .Dropdown-services ul  a li{
+    color: #222222 !important;
+  }
   .nav li:hover::after {
     width: 100%;
     left: 0;
@@ -152,7 +144,7 @@ button.find {
   
 
   .nav li.active {
-    border-bottom: 2px solid #003045;
+    border-bottom: 2px solid #fff;
   }
   
   .nav li .active:hover::after {

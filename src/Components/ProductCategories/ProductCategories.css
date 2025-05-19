@@ -3,18 +3,19 @@
 }
 .Category-sidebar {
     height: auto;
-    width: 33%;
+    width: fit-content;
     padding: 2px 21px;
     border-radius: 7px;
     transform: scale(1.02);
     margin: 38px 0;
     display: flex;
-    justify-content: space-around;
     margin: 26px auto 45px;
 }
 .Category-sidebar ul {
     list-style: none;
     width: 41%;
+    display: flex;
+    gap: 30px;
 }
 .Category-sidebar ul h3 {
     display: flex;

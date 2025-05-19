@@ -25,7 +25,7 @@ function ProductCategories({ onCategoryChange,selectedCategory}) {
 
   return (
     <div className="Product-categories" ref={menuRef}>
-      <div className="Category-sidebar">
+      {/* <div className="Category-sidebar">
         <ul className="categories">
           <li
             onClick={() => handleToggle('Products')}
@@ -33,10 +33,8 @@ function ProductCategories({ onCategoryChange,selectedCategory}) {
           >
             <h3>
               {selectedCategory === correntCategory ? correntCategory : 'All' }
-              <i className={openSection === 'Products' ? 'fa-solid fa-caret-down' : 'fa-solid fa-caret-up'}></i>
             </h3>
           </li>
-          {openSection === 'Products' && (
             <>
               <li onClick={() => {onCategoryChange('BestSellers'), setOpenSection(''), setCurrentCategory('BestSellers')} }>BESTSELLERS</li>
               <li onClick={() => {onCategoryChange('Bundle'), setOpenSection(''),setCurrentCategory('Bundle')}}>BUNDLES</li>
@@ -44,9 +42,8 @@ function ProductCategories({ onCategoryChange,selectedCategory}) {
               <li onClick={() => {onCategoryChange('TopBrands'), setOpenSection(''), setCurrentCategory('TopBrands')}}>TOP BRANDS</li>
               <li onClick={() => {onCategoryChange('HighDemand'), setOpenSection(''), setCurrentCategory('HighDemand')}}>HIGH IN DEMAND</li>
             </>
-          )}
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -33,9 +33,21 @@ import career4 from '../../public/consaltancy4.jpg'
 import manufacturing5 from '../../public/manufacturing1.jpg'
 import manufacturing6 from '../../public/manufacturing2.jpg'
 import ComingSoon from '../../public/ComingSoon.png'
-
+import newCard from '../../public/newcard.jpg'
+import newCard1 from '../../public/newcard2.jpg'
+import newCard2 from '../../public/newcard3.jpg'
+import productreal1 from '../../public/productreal1.jpeg'
+import productreal2 from '../../public/productreal2.jpeg'
+import productreal3 from '../../public/productreal3.jpeg'
+import productreal4 from '../../public/productreal4.jpeg'
+import productreal5 from '../../public/productreal5.jpeg'
 
 const resouce = {
+   productreal1,
+   productreal2,
+   productreal3,
+   productreal4,
+   productreal5,
    slide3,
    About1,
    labs1,
@@ -69,7 +81,10 @@ const resouce = {
    career4,
    manufacturing5,
    manufacturing6,
-   ComingSoon
+   ComingSoon,
+   newCard,
+   newCard1,
+   newCard2
 };
 
 export default resouce;

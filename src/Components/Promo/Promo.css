@@ -1,193 +1,211 @@
 .Promo-section {
-    height: auto;
-    margin-top: 58px;
+  height: auto;
+  margin-top: 58px;
 }
 .promo-1 {
-    display: flex;
-    width: 80%;
-    margin: 0 auto;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
 }
 .promo-1 img {
-    height: 552px;
-    max-width: 400px;
-    border-radius: 17px;
+  height: 552px;
+  max-width: 400px;
+  border-radius: 17px;
 }
 .text-con {
-    display: flex;
-    justify-content: center;
-    padding: 0 16px;
-    flex-direction: column;
-    color: #003045;
-    font-weight: 600;
-    font-family: foco, Roboto, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 0 16px;
+  flex-direction: column;
+  color: #003045;
+  font-weight: 600;
+  font-family: foco, Roboto, Arial, sans-serif;
 }
 .text-con h2 {
-    font-size: 32px;
-    color: #003045;
-    font-weight: 900;
-    padding-bottom: 20px;
+  font-size: 32px;
+  color: #003045;
+  font-weight: 900;
+  padding-bottom: 20px;
 }
 
 .Mission-card {
-    box-shadow: 2px 3px 7px 5px rgb(141 136 136);
-    width: 300px;
-    height: 301px;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    transition: ease-in 2s;
+  box-shadow: 2px 3px 7px 5px rgb(141 136 136);
+  width: 314px;
+  height: 301px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: ease-in 2s;
 }
 .promo-2 h3 {
-    text-align: center;
-    font-size: 27px;
-    margin: 0 0 49px 0;
-    color: #003045;
+  text-align: center;
+  font-size: 27px;
+  margin: 0 0 49px 0;
+  color: #003045;
 }
 .Mission-wrapper {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 33px;
+  padding: 42px 0;
 }
 .Mission-card h2 {
-    font-size: 18px;
-    background: linear-gradient(45deg, #2576af, #23a18a);
-    color: #fff;
-    padding: 12px;
-    margin: 0;
-    position: absolute;
-    bottom: 0;
+  font-size: 18px;
+  background: linear-gradient(45deg, #2576af, #23a18a);
+  color: #fff;
+  padding: 12px;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .Mission-card p {
-    display: none;
-    height: 100%;
-    width: 100%;
-    background: transparent;
-    color: #fff;
-    padding: 12px;
-    animation: slidein 1.5s ease forwards;
-    font-size: 19px;
+  display: none;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  color: #fff;
+  padding: 12px;
+  animation: slidein 1.5s ease forwards;
+  font-size: 19px;
 }
 
 .Mission-card:hover h2,
 .Mission-card:hover img {
-    display: none;
+  display: none;
 }
-.Mission-card:hover{
-    background: linear-gradient(45deg, #2576af, #23a18a);
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.Mission-card:hover {
+  background: linear-gradient(45deg, #2576af, #23a18a);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .Mission-card:hover p {
-    display: block;
-    height: fit-content;
+  display: block;
+  height: fit-content;
 }
 .text-con span {
-    font-size: 26px;
-    color: #2576af;
-    font-weight: 800;
+  font-size: 26px;
+  color: #2576af;
+  font-weight: 800;
 }
 @keyframes slidein {
-    0% {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0%);
-        opacity: 1;
-    }
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }
 
 .Mission-wrapper img {
-    width: 100%;
-    height: 76%;
+  width: 100%;
+  height: 100%;
 }
 
 .promo-2 {
-    width: 80%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .promo-1 {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    width: 100%;
+    width: 90%;
     margin: 0 auto;
+  }
+  .Promo-section {
+    height: auto;
+    margin-top: 12px;
+  }
+  .text-con span {
+    font-size: 17px;
+    font-weight: 800;
+  }
 }
-@media(max-width:1024px){
-    .promo-1 {
-        display: flex;
-        flex-direction: column-reverse;
-        width: 100%;
-        text-align: center;
-    }
-    .Promo-section {
-        height: auto;
-        margin-top: 12px;
-    }
-    .text-con span {
-        font-size: 17px;
-        font-weight: 800;
-    }
-}
-@media(max-width:768px){
-    .text-con span{
-        font-size:17px;
-      }
-      .text-con p{
-        font-size:13px;
-      }
-      .Mission-card h2 {
-        font-size: 13px;
-    }
-    .Mission-wrapper img {
-        height: 100%;
-    }
-    .Mission-card p {
-        font-size: 14px;
-        width: 80%;
-        text-align: center;
-    }
-    .promo-1 img {
-        height: 322px;
-        width: 86%;
-    }
-    
+@media (max-width: 768px) {
+  .text-con span {
+    font-size: 17px;
+  }
+  .text-con p {
+    font-size: 13px;
+  }
+  .Mission-card h2 {
+    font-size: 13px;
+  }
+
+  .Mission-card p {
+    font-size: 14px;
+    width: 80%;
+    text-align: center;
+  }
+  .promo-1 img {
+    height: 322px;
+    width: 86%;
+  }
 }
 @media (min-width: 1000px) {
-    .slider-warapper {
-        width: 100%;
-        margin-top: 163px;
-    }
+  .slider-warapper {
+    width: 100%;
+    margin-top: 163px;
+  }
 }
 @media (max-width: 1000px) {
-    .text-con h2 {
-        font-size: 22px;
-    }
+  .text-con h2 {
+    font-size: 22px;
+  }
 }
 
-.sub-points span{
-    font-size: 16px;
-    color: #003045;
-    font-weight: 800;
+.sub-points span {
+  font-size: 16px;
+  color: #003045;
+  font-weight: 800;
 }
-.sub-points li{
-    font-size: 13px;
-    color: #3a6c81;
-    font-weight: 600;
+.sub-points li {
+  font-size: 13px;
+  color: #3a6c81;
+  font-weight: 600;
 }
-.sub-points{
-    list-style: none;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.sub-points {
+  list-style: none;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 .Mission-card.aos-init.aos-animate {
-    border-radius: 17px;
+  border-radius: 17px;
+}
+.sub-p {
+    font-size: 14px !important;
+    margin: 7px 0 0;
+    line-height: 1.5;
+    animation: fadShow 1s ease-in;
+}
+@keyframes fadShow {
+    0%{
+        opacity: 0%;
+        transform: translateY(-60px), scale(1.1);
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+.sub-p span {
+  font-size: 16px !important;
 }
 @media (max-width: 500px) {
-    .shadow h2 {
-        font-size: 13px !important;
-    }
+  .shadow h2 {
+    font-size: 13px !important;
+  }
 }

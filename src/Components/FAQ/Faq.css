@@ -1,5 +1,5 @@
 .Faq-section {
-    margin: 51px auto;
+    margin: 70px auto;
     width: 70%;
 }
 .Faq-section ul li {
@@ -8,9 +8,9 @@
 }
 .Faq-section ul li {
     display: flex;
-    margin: 16px 0;
-    padding: 15px 14px;
-    box-shadow: 0px 1px 2px 1px #dddddd;
+    margin: 26px 0;
+    padding: 24px 14px;
+    box-shadow: 0px 1px 6px 2px #a7a4a4;
     border-radius: 2px;
     cursor: pointer;
     flex-direction: column;
@@ -32,8 +32,8 @@
 }
 .Faq-section h3 {
     text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 30px;
+    margin-bottom: 51px;
     color: #0d4553;
 }
 .sub-con li {

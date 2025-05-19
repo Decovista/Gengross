@@ -81,7 +81,7 @@ function Navigation({ setActive, active }) {
                 onClick={() => handleScrollToSection('founder', 'Enviroment')}
                 className={active === 'Enviroment' ? 'active' : ''}
               >
-                Founder
+                Our Team
               </li>
             </Link>
 

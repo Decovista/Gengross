@@ -1,8 +1,97 @@
+.Hero-slider {
+    padding: 0 30px;
+    margin-top: 38px;
+}
+.slick-prev:before, .slick-next:before {
+    font-size: 28px;
+}
+.slick-prev, .slick-next {
+    width: 27px;
+    height: 26px;    
+    border-radius: 12px;
+    color: #fff !important;
+}
+
 .slide1 {
-    background: url(/public/galler1.jpg);
     width: 100%;
-    height: 100vh;
+    height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
+    display: flex !important;
+    margin-top: 56px;
+}
+.img-con,.text-con-hero
+ {
+    width: 50%;
+}
+.text-con-hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.text-con-hero button {
+    height: 40px;
+    padding: 0 20px;
+    color: #fff;
+    font-weight: 600;
+    background: #c79f52;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.text-con-hero h3 {
+    margin-bottom: 20px;
+    font-size: 57px;
+    width: 80%;
+    color: #0f435a;
+}
+.text-con-hero  p {
+    padding: 0 40px;
+    color: #0f435a;
+}
+.slick-slide img {
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: 1px 2px 4px 2px #0f435a;
+    height: 100%;
+    object-fit: cover;
+}
+.slick-list{
+    padding: 0 6px  28px;
+}
+@media(max-width:850px){
+    .slide1 {
+    flex-direction: column;
+}
+@media(max-width:600px){
+    .text-con-hero p {
+    font-size: 12px;
+}
+.text-con-hero h3 {
+        font-size: 20px !important;
+    }
+    .text-con-hero button {
+    font-size: 10px;
+     }
+}
+.img-con, .text-con-hero {
+    width: 100%;
+    height: 50%;
+}
+}
+@media(max-width:1024px){
+    .text-con-hero h3 {
+    margin-bottom: 20px;
+    font-size: 37px;
+}
+}
+@media(max-width:768px){
+.Hero-slider {
+    margin-top: 0;
+    padding: 0;
+}
 }

@@ -58,3 +58,9 @@
         width: 90%;
     }
 }
+li.faq-content {
+    background: #0f4359 !important;
+}
+li.faq-content p{
+    color: #fff;
+}

@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 import resouce from '../resouce';
 import './Promo.css';
 import Moto from '../Moto/Moto';
+import WhyChoose from '../Why-choose-us/WhyChoose';
 
 function Promo() {
   useEffect(() => {
@@ -16,24 +17,15 @@ function Promo() {
 
       <div className="promo-1" data-aos="fade-right">
         <div className="text-con">
-          <h2>Our Vision</h2>
+          <h2>About</h2>
           <p>
-            <span>Is to transform the future of healthcare by creating a world where health and wellness are seamlessly integrated into everyday life.</span> <br />
+            <span>Is to transform the future of healthcare by creating a world where health and wellness are seamlessly integrated into everyday life.</span> <br /><br/>
             We aim to bridge the gap between technology and personalized care, making high-quality healthcare accessible, proactive, and empowering for everyone—regardless of location or background. Through continuous innovation, data-driven solutions, and a human-first approach, we envision a healthier society where individuals are equipped to take control of their well-being and live longer, more fulfilling lives."
           </p><br/>
-          <p className='sub-p'><span>🌍 Accessibility for All</span><br/>In today’s world, access to quality healthcare should be a right, not a privilege. However, many individuals in rural or underserved areas face significant challenges in receiving the medical care they need. To address this, our goal is to bridge the gap between urban and remote healthcare access. By leveraging telemedicine, mobile health solutions, and community-based healthcare workers, we aim to ensure that every person, regardless of their location or socio-economic background, has access to vital health services.</p>
-          <br/>
-          <p className='sub-p'><span>🌱 Sustainable Growth</span><br/>The future of healthcare is intertwined with the health of our planet. A sustainable healthcare system is not just about providing services today, but also ensuring that future generations can benefit from the same level of care. As such, we are dedicated to building an ecosystem that balances health outcomes with environmental responsibility. This means integrating green technologies in healthcare facilities, reducing medical waste, and utilizing energy-efficient resources.</p>
-          <br/>
-          <p className='sub-p'><span>🤖 Technological Innovation </span><br/>The healthcare landscape is rapidly evolving, and technological advancements are at the forefront of this transformation. Artificial intelligence (AI), the Internet of Things (IoT), and mobile technology are enabling more personalized, accessible, and efficient healthcare than ever before.</p>
-          <br/>
-          <p className='sub-p'><span>🧠 Preventive Care Focus</span><br/>For too long, healthcare systems have primarily focused on treating illnesses after they occur. While treating sickness is important, we believe the future of healthcare lies in prevention. A proactive approach to health—focused on wellness and the early detection of potential health issues—can significantly reduce the burden on healthcare systems and improve quality of life for individuals.</p>
-          <br/>
-          <p className='sub-p'><span >🤝 Patient Empowerment</span><br/>Empowerment is at the core of patient-centered care. For healthcare to be truly effective, patients must have the tools, knowledge, and support to actively participate in their health decisions. Empowering individuals means making them active participants in their health journeys rather than passive recipients of care.</p>
-        </div>
+                  </div>
       </div>
-
-      <hr style={{ width: '80%', color: 'gray', margin: '40px auto' }} />
+    <WhyChoose/>
+      {/* <hr style={{ width: '80%', color: 'gray', margin: '40px auto' }} /> */}
 
       <Moto />
 

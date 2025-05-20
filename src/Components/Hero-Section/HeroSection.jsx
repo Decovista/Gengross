@@ -3,10 +3,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import './HeroSection.css'
+import resouce from '../resouce';
 
 function HeroSection() {
    var settings = {
+    autoplay:true,
     dots: true,
+    // arrows:false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -16,23 +19,36 @@ function HeroSection() {
     <div className='Hero-slider'>
       <Slider {...settings}>
       <div className='slide1'>
-        <h3>1</h3>
+        <div className="img-con">
+       <img src={resouce.homesection1} alt="" />
+        </div>
+         <div className="text-con-hero">
+           <h3>Advanced Care for Your Cattle</h3>
+           <p>Boost your cow’s immunity, enhance milk yield, and protect against common infections with our veterinary-approved cow medicine range.</p>
+           <button>Explore Cow Solutions</button>
+        </div>
       </div>
       <div className='slide1'>
-        <h3>2</h3>
+           <div className="img-con">
+       <img src={resouce.strongcheek} alt="strongcheek" />
+        </div>
+        <div className="text-con-hero">
+       <h3>Healthy Start for Stronger Chicks</h3>
+       <p>Give your chicks the right start with balanced nutrition and disease resistance. Ideal for broilers and layers in their early growth phase.</p>
+       <button>View Chick Products</button>
+        </div>
       </div>
       <div className='slide1'>
-        <h3>3</h3>
+           <div className="img-con">
+       <img src={resouce.digestive} alt="" />
+        </div>
+        <div className="text-con-hero">
+           <h3>Fast Relief from Digestive Disorders</h3>
+           <p>Treat stomach infections in poultry and livestock with fast-acting formulas that restore gut health and improve digestion.</p>
+           <button>Browse Stomach Care</button>
+        </div>
       </div>
-      <div className='slide1'>
-        <h3>4</h3>
-      </div>
-      <div className='slide1'>
-        <h3>5</h3>
-      </div>
-      <div className='slide1'>
-        <h3>6</h3>
-      </div>
+   
     </Slider>
     </div>
   )

@@ -66,6 +66,9 @@
     display: flex;
     justify-content: flex-end;
 }
+i.fa-solid.fa-bars {
+    color: #ead5ab;
+}
 button.find {
     padding: 10px 15px 10px 13px;
     background: #003045;

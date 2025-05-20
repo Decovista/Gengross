@@ -38,9 +38,9 @@ function Footer() {
             <h2>Follow Us</h2>
             <hr />
             <div className='social-icons'>
-              <a href="https://www.instagram.com/"><i className="fa-brands fa-instagram"></i></a>
-              <a href="https://x.com/?lang=en"><i className="fa-brands fa-x-twitter"></i></a>
-              <a href="https://in.linkedin.com/"><i className="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://www.instagram.com/gengross_healthcare?igsh=MXFybWZuaDBqOGhtMA=="><i className="fa-brands fa-instagram"></i></a>
+              <a href="https://x.com/gengross_life?t=fV_vbqYP0U0KAnLC9MAUJw&s=09"><i className="fa-brands fa-x-twitter"></i></a>
+              <a href="https://www.facebook.com/share/1AitujSx2o/"><i class="fa-brands fa-facebook-f"></i></a>
             </div>
           </div>
         </div>

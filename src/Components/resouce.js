@@ -41,8 +41,19 @@ import productreal2 from '../../public/productreal2.jpeg'
 import productreal3 from '../../public/productreal3.jpeg'
 import productreal4 from '../../public/productreal4.jpeg'
 import productreal5 from '../../public/productreal5.jpeg'
+import homesection1 from '../../public/home-section1.jpg'
+import homesection2 from '../../public/home-section2.png'
+import homesection3 from '../../public/home-section3.png'
+import digestive from '../../public/disorder.png'
+import strongcheek from '../../public/strong-cheeks.png' 
+
 
 const resouce = {
+   strongcheek,
+   digestive,
+   homesection1,
+   homesection2,
+   homesection3,
    productreal1,
    productreal2,
    productreal3,

@@ -47,7 +47,7 @@ function Faq() {
 
                             {sequence === index && (
                                 <ul className='sub-con'>
-                                    <li>
+                                    <li className='faq-content'>
                                         <p>{item.content}</p> </li>
                                 </ul>
                             )}

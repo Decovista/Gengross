@@ -6,13 +6,11 @@ function Dropdown({ type, setClickTracker }) {
   const dropdownWrapperRef = useRef(null);
 
   const AboutDrop = [
-    { title: 'Our Team', path: '/AboutGengross' },
     { title: 'Manufacturing', path: '/About' },
     { title: 'Work-Culture', path: '/Media' },
   ];
 
   const services = [
-    { title: 'Career', path: '/Career' },
     { title: 'Generic Medicine', path: '/Generic' },
   ];
 

@@ -6,10 +6,6 @@ function SubNav({setToggleNav}) {
   const [toggleSubMenu, setToggleSubMenu] = useState(false)
   const subMenu = [
     {
-      item:'Our Team', 
-      path:'/AboutGengross'
-    },
-    {
       item:'Manufacturing',
       path:'/About'
     },
@@ -35,7 +31,6 @@ function SubNav({setToggleNav}) {
         })
       }</ul></li>
       <Link to='/Generic' onClick={() => setToggleNav(false)}><li>Generic Medicine</li></Link>
-      <Link to='/Product' onClick={() => setToggleNav(false)}><li>Products</li></Link>
       </ul>
     </div>
   )

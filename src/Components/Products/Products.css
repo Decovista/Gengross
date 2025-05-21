@@ -3,11 +3,14 @@
     background: rgb(82, 82, 197);
     border-radius: 50px;
 }
-.Products {
+.products {
+    display: flex;
     width: 90%;
-    margin: 5px auto 46px;
+    margin: 73px auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 85px;
 }
-
 @media (min-width: 440px) and (max-width: 768px) {
     .Products .card {
       margin: 33px auto !important;

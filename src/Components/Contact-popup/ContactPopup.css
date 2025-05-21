@@ -5,13 +5,30 @@
     padding: 40px 40px;
     border-radius: 19px;
     top: 10%;
-    box-shadow: -1px 0px 11px 1px gray;
+    box-shadow: 0px 1px 6px 0px #f5f5f5;
     transform: scale(1.01);
     animation: slidein 0.5s ease forwards;
     background: linear-gradient(135deg, #0b474b, #143f6b);
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) !important;
+}
+input#other-location {
+    background: #fff;
+    color: #10435c;
+}
+input#other-location::placeholder {
+     color: #10435c; 
+}
+select{
+    outline: none;
+    border: none;
+}
+select#product,select#location,select#contactTime {
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    border-radius: 8px;
 }
 @keyframes slidein {
     0% {
@@ -35,14 +52,15 @@
 }
 .ContactPopup i.fa-solid.fa-xmark {
     position: absolute;
-    left: -42px;
+    left: 20px;
     font-size: 39px;
-    color: #0c9b70;
-    top: 0;
+    color: #ffff;
+    top: 14px;
     cursor: pointer;
     transition: 0.5s ease;
     background: transparent;
 }
+
 .ContactPopup i.fa-solid.fa-xmark:hover {
     transform: rotate(360deg) scale(1.01); 
     transition: transform 0.3s ease;

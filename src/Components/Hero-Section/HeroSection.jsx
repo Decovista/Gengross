@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -9,7 +10,7 @@ function HeroSection() {
    var settings = {
     autoplay:true,
     dots: true,
-    // arrows:false,
+    arrows:false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -25,7 +26,7 @@ function HeroSection() {
          <div className="text-con-hero">
            <h3>Advanced Care for Your Cattle</h3>
            <p>Boost your cow’s immunity, enhance milk yield, and protect against common infections with our veterinary-approved cow medicine range.</p>
-           <button>Explore Cow Solutions</button>
+           <Link to='/Product'><button>Explore Cow Solutions</button></Link>
         </div>
       </div>
       <div className='slide1'>
@@ -35,7 +36,7 @@ function HeroSection() {
         <div className="text-con-hero">
        <h3>Healthy Start for Stronger Chicks</h3>
        <p>Give your chicks the right start with balanced nutrition and disease resistance. Ideal for broilers and layers in their early growth phase.</p>
-       <button>View Chick Products</button>
+       <Link to='/Product'><button>View Chick Products</button></Link>
         </div>
       </div>
       <div className='slide1'>
@@ -45,7 +46,7 @@ function HeroSection() {
         <div className="text-con-hero">
            <h3>Fast Relief from Digestive Disorders</h3>
            <p>Treat stomach infections in poultry and livestock with fast-acting formulas that restore gut health and improve digestion.</p>
-           <button>Browse Stomach Care</button>
+           <Link to='/Product'><button>Browse Stomach Care</button></Link>
         </div>
       </div>
    

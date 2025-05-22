@@ -5,11 +5,11 @@
 }
 .products {
     display: flex;
-    width: 90%;
-    margin: 73px auto;
+    width: 92% !important;
+    margin: 40px auto;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 85px;
+    gap: 69px;
 }
 @media (min-width: 440px) and (max-width: 768px) {
     .Products .card {

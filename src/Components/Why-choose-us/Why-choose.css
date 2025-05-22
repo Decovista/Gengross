@@ -44,3 +44,10 @@
     width: 74% !important;
 }
 }
+.why-choose-card {
+  transition: transform 0.3s ease;
+}
+.why-choose-card:hover {
+  transform: translateY(-5px);
+}
+

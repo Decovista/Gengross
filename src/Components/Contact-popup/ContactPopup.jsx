@@ -64,6 +64,7 @@ function ContactPopup({ setShowContact }) {
             <option value="Livogen">Livogen</option>
             <option value="Poulgrow-p">Poulgrow-p</option>
             <option value="Genferol">Genferol</option>
+            <option value="Genferol">Other products</option>
           </select>
         </div>
 

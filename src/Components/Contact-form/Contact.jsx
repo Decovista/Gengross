@@ -47,7 +47,7 @@ function Contact({ setShowContact }) {
         <div className="cards">
           <h3>Get In Touch</h3>
           <p>Kindly click on the button and fill the contact form to get our services.</p>
-          <button onClick={() => setShowContact(true)}>Subscribe Us</button>
+          <button onClick={() => setShowContact(true)}>Contact Us</button>
         </div>
       </div>
     </div>

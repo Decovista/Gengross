@@ -16,7 +16,7 @@ function Contact({ setShowContact }) {
               target="_blank"
                rel="noopener noreferrer"
                >
-            <p>Gengross Life Sciencs</p> </a>
+            <p>Gengross Life Science</p>` </a>
           </li>
           <li>
             <i className="fa-solid fa-location-dot"></i>

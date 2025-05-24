@@ -46,11 +46,9 @@ import homesection2 from '../../public/home-section2.png'
 import homesection3 from '../../public/home-section3.png'
 import digestive from '../../public/disorder.png'
 import strongcheek from '../../public/strong-cheeks.png' 
-import AnimatedBg from '../../public/AnimatedBg.mp4'
 
 
 const resouce = {
-   AnimatedBg,
    strongcheek,
    digestive,
    homesection1,

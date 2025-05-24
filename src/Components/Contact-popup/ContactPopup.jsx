@@ -40,7 +40,7 @@ function ContactPopup({ setShowContact }) {
       setStatus(null);
 
       const response = await fetch(
-        import.meta.env.VITE_BACKEND_URL || "https://gengross-backend-10.onrender.com/api/contact",
+         "https://gengross-backend-10.onrender.com/api/contact",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
